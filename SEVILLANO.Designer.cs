@@ -64,38 +64,43 @@
             label6 = new Label();
             tabPage3 = new TabPage();
             splitContainer3 = new SplitContainer();
+            textBox20 = new TextBox();
+            textBox19 = new TextBox();
+            textBox18 = new TextBox();
+            label17 = new Label();
+            textBox17 = new TextBox();
+            textBox15 = new TextBox();
+            label16 = new Label();
             pictureBox3 = new PictureBox();
+            textBox30 = new TextBox();
+            label28 = new Label();
+            textBox29 = new TextBox();
+            label27 = new Label();
+            textBox28 = new TextBox();
+            label26 = new Label();
+            textBox27 = new TextBox();
+            label25 = new Label();
+            textBox26 = new TextBox();
+            label24 = new Label();
+            textBox25 = new TextBox();
+            label23 = new Label();
+            label22 = new Label();
+            textBox24 = new TextBox();
+            label21 = new Label();
+            textBox23 = new TextBox();
+            label20 = new Label();
+            label19 = new Label();
+            textBox22 = new TextBox();
+            label18 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            label16 = new Label();
-            textBox15 = new TextBox();
-            textBox16 = new TextBox();
-            textBox17 = new TextBox();
-            label17 = new Label();
-            textBox18 = new TextBox();
-            textBox19 = new TextBox();
-            textBox20 = new TextBox();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
             textBox21 = new TextBox();
-            label18 = new Label();
-            textBox22 = new TextBox();
-            label19 = new Label();
-            label20 = new Label();
-            textBox23 = new TextBox();
-            label21 = new Label();
-            textBox24 = new TextBox();
-            label22 = new Label();
-            label23 = new Label();
-            textBox25 = new TextBox();
-            label24 = new Label();
-            textBox26 = new TextBox();
-            label25 = new Label();
-            textBox27 = new TextBox();
-            label26 = new Label();
-            textBox28 = new TextBox();
-            label27 = new Label();
-            textBox29 = new TextBox();
-            label28 = new Label();
-            textBox30 = new TextBox();
+            textBox16 = new TextBox();
+            panel4 = new Panel();
+            panel5 = new Panel();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
@@ -141,7 +146,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            splitContainer2.Panel1.BackColor = Color.Khaki;
+            splitContainer2.Panel1.BackColor = Color.DarkSlateGray;
             splitContainer2.Panel1.Controls.Add(textBox5);
             splitContainer2.Panel1.Controls.Add(label5);
             splitContainer2.Panel1.Controls.Add(textBox4);
@@ -158,7 +163,7 @@
             // 
             // splitContainer2.Panel2
             // 
-            splitContainer2.Panel2.BackColor = Color.Khaki;
+            splitContainer2.Panel2.BackColor = Color.AliceBlue;
             splitContainer2.Panel2.Controls.Add(label15);
             splitContainer2.Panel2.Controls.Add(textBox6);
             splitContainer2.Panel2.Controls.Add(textBox14);
@@ -178,6 +183,7 @@
             splitContainer2.Panel2.Controls.Add(label8);
             splitContainer2.Panel2.Controls.Add(label7);
             splitContainer2.Panel2.Controls.Add(label6);
+            splitContainer2.Panel2.Controls.Add(panel1);
             splitContainer2.Panel2.Paint += splitContainer2_Panel2_Paint_1;
             splitContainer2.Size = new Size(671, 649);
             splitContainer2.SplitterDistance = 221;
@@ -280,7 +286,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.Gray;
+            button2.BackColor = Color.Gainsboro;
             button2.Location = new Point(21, 182);
             button2.Name = "button2";
             button2.Size = new Size(163, 39);
@@ -291,10 +297,10 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.BackColor = Color.Firebrick;
+            pictureBox2.BackColor = Color.White;
             pictureBox2.Location = new Point(0, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(217, 176);
+            pictureBox2.Size = new Size(226, 176);
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -452,7 +458,9 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Teal;
             label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.White;
             label6.Location = new Point(7, 10);
             label6.Name = "label6";
             label6.Size = new Size(192, 19);
@@ -478,22 +486,24 @@
             // 
             // splitContainer3.Panel1
             // 
-            splitContainer3.Panel1.BackColor = Color.Khaki;
+            splitContainer3.Panel1.BackColor = Color.DarkSlateGray;
             splitContainer3.Panel1.Controls.Add(textBox21);
             splitContainer3.Panel1.Controls.Add(textBox20);
             splitContainer3.Panel1.Controls.Add(textBox19);
-            splitContainer3.Panel1.Controls.Add(textBox18);
             splitContainer3.Panel1.Controls.Add(label17);
             splitContainer3.Panel1.Controls.Add(textBox17);
             splitContainer3.Panel1.Controls.Add(textBox16);
             splitContainer3.Panel1.Controls.Add(textBox15);
             splitContainer3.Panel1.Controls.Add(label16);
             splitContainer3.Panel1.Controls.Add(pictureBox3);
+            splitContainer3.Panel1.Controls.Add(textBox18);
+            splitContainer3.Panel1.Controls.Add(panel4);
+            splitContainer3.Panel1.Controls.Add(panel5);
             splitContainer3.Panel1.ForeColor = Color.Khaki;
             // 
             // splitContainer3.Panel2
             // 
-            splitContainer3.Panel2.BackColor = Color.Khaki;
+            splitContainer3.Panel2.BackColor = Color.AliceBlue;
             splitContainer3.Panel2.Controls.Add(textBox30);
             splitContainer3.Panel2.Controls.Add(label28);
             splitContainer3.Panel2.Controls.Add(textBox29);
@@ -514,19 +524,262 @@
             splitContainer3.Panel2.Controls.Add(label19);
             splitContainer3.Panel2.Controls.Add(textBox22);
             splitContainer3.Panel2.Controls.Add(label18);
+            splitContainer3.Panel2.Controls.Add(panel2);
+            splitContainer3.Panel2.Controls.Add(panel3);
             splitContainer3.Panel2.Paint += splitContainer3_Panel2_Paint;
             splitContainer3.Size = new Size(671, 649);
             splitContainer3.SplitterDistance = 223;
             splitContainer3.TabIndex = 0;
             // 
+            // textBox20
+            // 
+            textBox20.Location = new Point(29, 359);
+            textBox20.Multiline = true;
+            textBox20.Name = "textBox20";
+            textBox20.Size = new Size(161, 27);
+            textBox20.TabIndex = 10;
+            // 
+            // textBox19
+            // 
+            textBox19.Location = new Point(26, 538);
+            textBox19.Name = "textBox19";
+            textBox19.Size = new Size(161, 27);
+            textBox19.TabIndex = 9;
+            // 
+            // textBox18
+            // 
+            textBox18.Location = new Point(26, 489);
+            textBox18.Name = "textBox18";
+            textBox18.Size = new Size(161, 27);
+            textBox18.TabIndex = 8;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.BackColor = Color.Teal;
+            label17.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.White;
+            label17.Location = new Point(16, 447);
+            label17.Name = "label17";
+            label17.Size = new Size(80, 19);
+            label17.TabIndex = 7;
+            label17.Text = "Language";
+            // 
+            // textBox17
+            // 
+            textBox17.Location = new Point(30, 319);
+            textBox17.Multiline = true;
+            textBox17.Name = "textBox17";
+            textBox17.Size = new Size(161, 27);
+            textBox17.TabIndex = 6;
+            textBox17.TextChanged += textBox17_TextChanged;
+            // 
+            // textBox15
+            // 
+            textBox15.Location = new Point(29, 232);
+            textBox15.Multiline = true;
+            textBox15.Name = "textBox15";
+            textBox15.Size = new Size(161, 34);
+            textBox15.TabIndex = 4;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.BackColor = Color.Teal;
+            label16.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.White;
+            label16.Location = new Point(13, 198);
+            label16.Name = "label16";
+            label16.Size = new Size(52, 19);
+            label16.TabIndex = 3;
+            label16.Text = "Skills";
+            // 
             // pictureBox3
             // 
-            pictureBox3.BackColor = Color.Firebrick;
-            pictureBox3.Location = new Point(-7, 2);
+            pictureBox3.BackColor = Color.White;
+            pictureBox3.Location = new Point(-7, -3);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(227, 176);
+            pictureBox3.Size = new Size(239, 195);
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
+            // 
+            // textBox30
+            // 
+            textBox30.Location = new Point(122, 538);
+            textBox30.Multiline = true;
+            textBox30.Name = "textBox30";
+            textBox30.Size = new Size(266, 27);
+            textBox30.TabIndex = 20;
+            // 
+            // label28
+            // 
+            label28.AutoSize = true;
+            label28.Location = new Point(29, 543);
+            label28.Name = "label28";
+            label28.Size = new Size(87, 19);
+            label28.TabIndex = 19;
+            label28.Text = "Occupation";
+            // 
+            // textBox29
+            // 
+            textBox29.Location = new Point(157, 487);
+            textBox29.Name = "textBox29";
+            textBox29.Size = new Size(175, 27);
+            textBox29.TabIndex = 18;
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Location = new Point(27, 488);
+            label27.Name = "label27";
+            label27.Size = new Size(121, 19);
+            label27.TabIndex = 17;
+            label27.Text = "Contact Number";
+            // 
+            // textBox28
+            // 
+            textBox28.Location = new Point(85, 420);
+            textBox28.Multiline = true;
+            textBox28.Name = "textBox28";
+            textBox28.Size = new Size(305, 34);
+            textBox28.TabIndex = 16;
+            // 
+            // label26
+            // 
+            label26.AutoSize = true;
+            label26.Location = new Point(29, 429);
+            label26.Name = "label26";
+            label26.Size = new Size(49, 19);
+            label26.TabIndex = 15;
+            label26.Text = "Name";
+            // 
+            // textBox27
+            // 
+            textBox27.Location = new Point(122, 330);
+            textBox27.Multiline = true;
+            textBox27.Name = "textBox27";
+            textBox27.Size = new Size(266, 27);
+            textBox27.TabIndex = 14;
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Location = new Point(29, 333);
+            label25.Name = "label25";
+            label25.Size = new Size(87, 19);
+            label25.TabIndex = 13;
+            label25.Text = "Occupation";
+            // 
+            // textBox26
+            // 
+            textBox26.Location = new Point(157, 283);
+            textBox26.Name = "textBox26";
+            textBox26.Size = new Size(175, 27);
+            textBox26.TabIndex = 12;
+            textBox26.TextChanged += textBox26_TextChanged;
+            // 
+            // label24
+            // 
+            label24.AutoSize = true;
+            label24.Location = new Point(25, 286);
+            label24.Name = "label24";
+            label24.Size = new Size(121, 19);
+            label24.TabIndex = 11;
+            label24.Text = "Contact Number";
+            label24.Click += label24_Click;
+            // 
+            // textBox25
+            // 
+            textBox25.Location = new Point(80, 232);
+            textBox25.Multiline = true;
+            textBox25.Name = "textBox25";
+            textBox25.Size = new Size(305, 34);
+            textBox25.TabIndex = 10;
+            textBox25.TextChanged += textBox25_TextChanged;
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(25, 237);
+            label23.Name = "label23";
+            label23.Size = new Size(49, 19);
+            label23.TabIndex = 9;
+            label23.Text = "Name";
+            label23.Click += label23_Click;
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.BackColor = Color.Teal;
+            label22.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label22.ForeColor = Color.White;
+            label22.Location = new Point(11, 187);
+            label22.Name = "label22";
+            label22.Size = new Size(162, 19);
+            label22.TabIndex = 8;
+            label22.Text = "Character Reference";
+            // 
+            // textBox24
+            // 
+            textBox24.Location = new Point(292, 127);
+            textBox24.Name = "textBox24";
+            textBox24.Size = new Size(96, 27);
+            textBox24.TabIndex = 7;
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(272, 131);
+            label21.Name = "label21";
+            label21.Size = new Size(15, 19);
+            label21.TabIndex = 6;
+            label21.Text = "-";
+            // 
+            // textBox23
+            // 
+            textBox23.Location = new Point(171, 127);
+            textBox23.Name = "textBox23";
+            textBox23.Size = new Size(96, 27);
+            textBox23.TabIndex = 5;
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(13, 130);
+            label20.Name = "label20";
+            label20.Size = new Size(149, 19);
+            label20.TabIndex = 3;
+            label20.Text = "Year of Employment";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(11, 80);
+            label19.Name = "label19";
+            label19.Size = new Size(117, 19);
+            label19.TabIndex = 2;
+            label19.Text = "Company Name";
+            // 
+            // textBox22
+            // 
+            textBox22.Location = new Point(135, 77);
+            textBox22.Multiline = true;
+            textBox22.Name = "textBox22";
+            textBox22.Size = new Size(250, 34);
+            textBox22.TabIndex = 1;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.BackColor = Color.Teal;
+            label18.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.White;
+            label18.Location = new Point(11, 17);
+            label18.Name = "label18";
+            label18.Size = new Size(137, 19);
+            label18.TabIndex = 0;
+            label18.Text = "Work Experience";
+            label18.Click += label18_Click;
             // 
             // pictureBox1
             // 
@@ -546,256 +799,61 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // panel1
             // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.Black;
-            label16.Location = new Point(14, 195);
-            label16.Name = "label16";
-            label16.Size = new Size(52, 19);
-            label16.TabIndex = 3;
-            label16.Text = "Skills";
+            panel1.BackColor = Color.Teal;
+            panel1.Location = new Point(-3, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(452, 44);
+            panel1.TabIndex = 22;
             // 
-            // textBox15
+            // panel2
             // 
-            textBox15.Location = new Point(29, 230);
-            textBox15.Multiline = true;
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(161, 34);
-            textBox15.TabIndex = 4;
+            panel2.BackColor = Color.Teal;
+            panel2.Location = new Point(1, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(444, 51);
+            panel2.TabIndex = 21;
             // 
-            // textBox16
+            // panel3
             // 
-            textBox16.Location = new Point(28, 274);
-            textBox16.Multiline = true;
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(161, 27);
-            textBox16.TabIndex = 5;
-            // 
-            // textBox17
-            // 
-            textBox17.Location = new Point(30, 322);
-            textBox17.Multiline = true;
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(161, 27);
-            textBox17.TabIndex = 6;
-            textBox17.TextChanged += textBox17_TextChanged;
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.Black;
-            label17.Location = new Point(16, 447);
-            label17.Name = "label17";
-            label17.Size = new Size(80, 19);
-            label17.TabIndex = 7;
-            label17.Text = "Language";
-            // 
-            // textBox18
-            // 
-            textBox18.Location = new Point(28, 488);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(161, 27);
-            textBox18.TabIndex = 8;
-            // 
-            // textBox19
-            // 
-            textBox19.Location = new Point(26, 538);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(161, 27);
-            textBox19.TabIndex = 9;
-            // 
-            // textBox20
-            // 
-            textBox20.Location = new Point(29, 366);
-            textBox20.Multiline = true;
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(161, 27);
-            textBox20.TabIndex = 10;
+            panel3.BackColor = Color.Teal;
+            panel3.Location = new Point(0, 169);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(444, 51);
+            panel3.TabIndex = 22;
             // 
             // textBox21
             // 
-            textBox21.Location = new Point(30, 409);
+            textBox21.Location = new Point(30, 401);
             textBox21.Multiline = true;
             textBox21.Name = "textBox21";
             textBox21.Size = new Size(161, 27);
             textBox21.TabIndex = 11;
             // 
-            // label18
+            // textBox16
             // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.Location = new Point(11, 22);
-            label18.Name = "label18";
-            label18.Size = new Size(137, 19);
-            label18.TabIndex = 0;
-            label18.Text = "Work Experience";
-            label18.Click += label18_Click;
+            textBox16.Location = new Point(28, 278);
+            textBox16.Multiline = true;
+            textBox16.Name = "textBox16";
+            textBox16.Size = new Size(161, 27);
+            textBox16.TabIndex = 5;
             // 
-            // textBox22
+            // panel4
             // 
-            textBox22.Location = new Point(135, 77);
-            textBox22.Multiline = true;
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(250, 34);
-            textBox22.TabIndex = 1;
+            panel4.BackColor = Color.Teal;
+            panel4.Location = new Point(-111, 192);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(444, 31);
+            panel4.TabIndex = 23;
             // 
-            // label19
+            // panel5
             // 
-            label19.AutoSize = true;
-            label19.Location = new Point(11, 80);
-            label19.Name = "label19";
-            label19.Size = new Size(117, 19);
-            label19.TabIndex = 2;
-            label19.Text = "Company Name";
-            // 
-            // label20
-            // 
-            label20.AutoSize = true;
-            label20.Location = new Point(13, 130);
-            label20.Name = "label20";
-            label20.Size = new Size(149, 19);
-            label20.TabIndex = 3;
-            label20.Text = "Year of Employment";
-            // 
-            // textBox23
-            // 
-            textBox23.Location = new Point(171, 127);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(96, 27);
-            textBox23.TabIndex = 5;
-            // 
-            // label21
-            // 
-            label21.AutoSize = true;
-            label21.Location = new Point(272, 131);
-            label21.Name = "label21";
-            label21.Size = new Size(15, 19);
-            label21.TabIndex = 6;
-            label21.Text = "-";
-            // 
-            // textBox24
-            // 
-            textBox24.Location = new Point(292, 127);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(96, 27);
-            textBox24.TabIndex = 7;
-            // 
-            // label22
-            // 
-            label22.AutoSize = true;
-            label22.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label22.Location = new Point(11, 195);
-            label22.Name = "label22";
-            label22.Size = new Size(162, 19);
-            label22.TabIndex = 8;
-            label22.Text = "Character Reference";
-            // 
-            // label23
-            // 
-            label23.AutoSize = true;
-            label23.Location = new Point(25, 237);
-            label23.Name = "label23";
-            label23.Size = new Size(49, 19);
-            label23.TabIndex = 9;
-            label23.Text = "Name";
-            label23.Click += label23_Click;
-            // 
-            // textBox25
-            // 
-            textBox25.Location = new Point(80, 232);
-            textBox25.Multiline = true;
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(305, 34);
-            textBox25.TabIndex = 10;
-            textBox25.TextChanged += textBox25_TextChanged;
-            // 
-            // label24
-            // 
-            label24.AutoSize = true;
-            label24.Location = new Point(25, 286);
-            label24.Name = "label24";
-            label24.Size = new Size(121, 19);
-            label24.TabIndex = 11;
-            label24.Text = "Contact Number";
-            label24.Click += label24_Click;
-            // 
-            // textBox26
-            // 
-            textBox26.Location = new Point(157, 283);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(175, 27);
-            textBox26.TabIndex = 12;
-            textBox26.TextChanged += textBox26_TextChanged;
-            // 
-            // label25
-            // 
-            label25.AutoSize = true;
-            label25.Location = new Point(29, 333);
-            label25.Name = "label25";
-            label25.Size = new Size(87, 19);
-            label25.TabIndex = 13;
-            label25.Text = "Occupation";
-            // 
-            // textBox27
-            // 
-            textBox27.Location = new Point(122, 330);
-            textBox27.Multiline = true;
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(266, 27);
-            textBox27.TabIndex = 14;
-            // 
-            // label26
-            // 
-            label26.AutoSize = true;
-            label26.Location = new Point(29, 429);
-            label26.Name = "label26";
-            label26.Size = new Size(49, 19);
-            label26.TabIndex = 15;
-            label26.Text = "Name";
-            // 
-            // textBox28
-            // 
-            textBox28.Location = new Point(85, 420);
-            textBox28.Multiline = true;
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(305, 34);
-            textBox28.TabIndex = 16;
-            // 
-            // label27
-            // 
-            label27.AutoSize = true;
-            label27.Location = new Point(27, 488);
-            label27.Name = "label27";
-            label27.Size = new Size(121, 19);
-            label27.TabIndex = 17;
-            label27.Text = "Contact Number";
-            // 
-            // textBox29
-            // 
-            textBox29.Location = new Point(157, 487);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(175, 27);
-            textBox29.TabIndex = 18;
-            // 
-            // label28
-            // 
-            label28.AutoSize = true;
-            label28.Location = new Point(29, 543);
-            label28.Name = "label28";
-            label28.Size = new Size(87, 19);
-            label28.TabIndex = 19;
-            label28.Text = "Occupation";
-            // 
-            // textBox30
-            // 
-            textBox30.Location = new Point(122, 538);
-            textBox30.Multiline = true;
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(266, 27);
-            textBox30.TabIndex = 20;
+            panel5.BackColor = Color.Teal;
+            panel5.Location = new Point(-111, 443);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(444, 31);
+            panel5.TabIndex = 24;
             // 
             // SEVILLANO
             // 
@@ -900,5 +958,11 @@
         private Label label27;
         private TextBox textBox30;
         private Label label28;
+        private MenuStrip menuStrip1;
+        private Panel panel1;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel2;
+        private Panel panel3;
     }
 }
