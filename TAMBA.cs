@@ -71,5 +71,10 @@ namespace WinFormsApp1
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

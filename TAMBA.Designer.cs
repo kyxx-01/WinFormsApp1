@@ -30,12 +30,12 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            button2 = new Button();
             button1 = new Button();
             pictureBox1 = new PictureBox();
             tabPage2 = new TabPage();
             tabPage3 = new TabPage();
             tabPage4 = new TabPage();
-            button2 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -65,6 +65,17 @@
             tabPage1.Size = new Size(1163, 685);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabPage1";
+            tabPage1.Click += tabPage1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(1069, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 29);
+            button2.TabIndex = 1;
+            button2.Text = "Return";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -95,7 +106,7 @@
             tabPage2.Location = new Point(4, 29);
             tabPage2.Name = "tabPage2";
             tabPage2.Padding = new Padding(3);
-            tabPage2.Size = new Size(1004, 472);
+            tabPage2.Size = new Size(1163, 685);
             tabPage2.TabIndex = 1;
             tabPage2.Text = "tabPage2";
             tabPage2.UseVisualStyleBackColor = true;
@@ -105,7 +116,7 @@
             tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(1004, 472);
+            tabPage3.Size = new Size(1163, 685);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "tabPage3";
             tabPage3.UseVisualStyleBackColor = true;
@@ -115,20 +126,10 @@
             tabPage4.Location = new Point(4, 29);
             tabPage4.Name = "tabPage4";
             tabPage4.Padding = new Padding(3);
-            tabPage4.Size = new Size(1004, 472);
+            tabPage4.Size = new Size(1163, 685);
             tabPage4.TabIndex = 3;
             tabPage4.Text = "tabPage4";
             tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(1069, 0);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "Return";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // TAMBA
             // 
