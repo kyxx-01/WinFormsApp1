@@ -38,7 +38,14 @@ namespace WinFormsApp1
         {
             TAMBA tambaForm = new TAMBA();  // Create instance of TAMBA
             tambaForm.Show();
-            this .Hide();  // Hide the current form
+            this.Hide();  // Hide the current form
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SEVILLANO SEVILLANO = new SEVILLANO();
+            SEVILLANO.Show();
+            this.Hide();  // Hide the current form
         }
     }
 }

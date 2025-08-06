@@ -39,7 +39,17 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            {
+                openFileDialog.Title = "Select an image";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;";
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    // Load and display the selected image in the PictureBox
+                    pictureBox2.Image = Image.FromFile(openFileDialog.FileName);
+                }
+            }
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -170,6 +180,60 @@ namespace WinFormsApp1
         private void splitContainer3_Panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CV_PREVIEW resume = new CV_PREVIEW();
+            //first tab
+            resume.profilePicBox.Image = pictureBox2.Image;
+            resume.nameTB.Text = nameINPUT.Text;
+            resume.profileSummaryTB.Text = profileSummaryINPUT.Text;
+            resume.addressTB.Text = addressINPUT.Text;
+            resume.emailTB.Text = emailINPUT.Text;
+            resume.contactTB.Text = contactINPUT.Text;
+            resume.primaryTB.Text = primaryINPUT.Text;
+            resume.pyearTB.Text = pyearINPUT.Text;
+            resume.pyearGraduatedTB.Text = pyearGraduatedINPUT.Text;
+            resume.secondaryTB.Text = secondaryINPUT.Text;
+            resume.syearTB.Text = syearINPUT.Text;
+            resume.syearGraduatedTB.Text = syearGraduatedINPUT.Text;
+            resume.tertiaryTB.Text = tertiaryINPUT.Text;
+            resume.tyearTB.Text = tyearINPUT.Text;
+            resume.tyearGraduatedTB.Text = tyearGraduatedINPUT.Text;
+            //second tab
+            resume.skill1TB.Text = skill1INPUT.Text;
+            resume.skill2TB.Text = skill2INPUT.Text;
+            resume.skill3TB.Text = skill3INPUT.Text;
+            resume.skill4TB.Text = skill4INPUT.Text;
+            resume.skill5TB.Text = skill5INPUT.Text;
+            resume.language1TB.Text = language1INPUT.Text;
+            resume.language2TB.Text = language2INPUT.Text;
+            resume.companyNameTB.Text = companyNameINPUT.Text;
+            resume.yearStartTB.Text = yearStartINPUT.Text;
+            resume.yearEndTB.Text = yearEndINPUT.Text;
+            resume.char1TB.Text = char1INPUT.Text;
+            resume.occupation1TB.Text = occupation1INPUT.Text;
+            resume.contact1TB.Text = contact1INPUT.Text;
+            resume.char2TB.Text = char2INPUT.Text;
+            resume.occupation2TB.Text = occupation2INPUT.Text;
+            resume.contact2TB.Text = contact2INPUT.Text;
+            resume.Show();
         }
     }
 }

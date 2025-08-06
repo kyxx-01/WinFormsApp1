@@ -63,6 +63,16 @@ namespace WinFormsApp1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FORMALPIC_SEVILLANO {
+            get {
+                object obj = ResourceManager.GetObject("FORMALPIC_SEVILLANO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Landing_BG {
             get {
                 object obj = ResourceManager.GetObject("Landing BG", resourceCulture);

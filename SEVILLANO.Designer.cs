@@ -31,76 +31,76 @@
             tabControl1 = new TabControl();
             tabPage2 = new TabPage();
             splitContainer2 = new SplitContainer();
-            textBox5 = new TextBox();
+            contactINPUT = new TextBox();
             label5 = new Label();
-            textBox4 = new TextBox();
+            emailINPUT = new TextBox();
             label4 = new Label();
-            textBox3 = new TextBox();
+            addressINPUT = new TextBox();
             label3 = new Label();
-            textBox1 = new TextBox();
+            nameINPUT = new TextBox();
             label2 = new Label();
             label1 = new Label();
-            textBox2 = new TextBox();
+            profileSummaryINPUT = new TextBox();
             button2 = new Button();
             pictureBox2 = new PictureBox();
             label15 = new Label();
-            textBox6 = new TextBox();
-            textBox14 = new TextBox();
-            textBox13 = new TextBox();
+            primaryINPUT = new TextBox();
+            tyearGraduatedINPUT = new TextBox();
+            tyearINPUT = new TextBox();
             label14 = new Label();
-            textBox12 = new TextBox();
+            tertiaryINPUT = new TextBox();
             label13 = new Label();
-            textBox11 = new TextBox();
+            syearGraduatedINPUT = new TextBox();
             label12 = new Label();
-            textBox10 = new TextBox();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
+            syearINPUT = new TextBox();
+            secondaryINPUT = new TextBox();
+            pyearGraduatedINPUT = new TextBox();
             label11 = new Label();
             label10 = new Label();
             label9 = new Label();
-            textBox7 = new TextBox();
+            pyearINPUT = new TextBox();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
+            panel1 = new Panel();
             tabPage3 = new TabPage();
             splitContainer3 = new SplitContainer();
-            textBox20 = new TextBox();
-            textBox19 = new TextBox();
-            textBox18 = new TextBox();
+            skill5INPUT = new TextBox();
+            skill4INPUT = new TextBox();
+            language2INPUT = new TextBox();
             label17 = new Label();
-            textBox17 = new TextBox();
-            textBox15 = new TextBox();
+            skill3INPUT = new TextBox();
+            skill2INPUT = new TextBox();
+            skill1INPUT = new TextBox();
             label16 = new Label();
-            pictureBox3 = new PictureBox();
-            textBox30 = new TextBox();
-            label28 = new Label();
-            textBox29 = new TextBox();
-            label27 = new Label();
-            textBox28 = new TextBox();
-            label26 = new Label();
-            textBox27 = new TextBox();
-            label25 = new Label();
-            textBox26 = new TextBox();
-            label24 = new Label();
-            textBox25 = new TextBox();
-            label23 = new Label();
-            label22 = new Label();
-            textBox24 = new TextBox();
-            label21 = new Label();
-            textBox23 = new TextBox();
-            label20 = new Label();
-            label19 = new Label();
-            textBox22 = new TextBox();
-            label18 = new Label();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            textBox21 = new TextBox();
-            textBox16 = new TextBox();
+            language1INPUT = new TextBox();
             panel4 = new Panel();
             panel5 = new Panel();
+            button3 = new Button();
+            occupation2INPUT = new TextBox();
+            label28 = new Label();
+            contact2INPUT = new TextBox();
+            label27 = new Label();
+            char2INPUT = new TextBox();
+            label26 = new Label();
+            occupation1INPUT = new TextBox();
+            label25 = new Label();
+            contact1INPUT = new TextBox();
+            label24 = new Label();
+            char1INPUT = new TextBox();
+            label23 = new Label();
+            label22 = new Label();
+            yearEndINPUT = new TextBox();
+            label21 = new Label();
+            yearStartINPUT = new TextBox();
+            label20 = new Label();
+            label19 = new Label();
+            companyNameINPUT = new TextBox();
+            label18 = new Label();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            pictureBox1 = new PictureBox();
+            button1 = new Button();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
@@ -113,7 +113,6 @@
             splitContainer3.Panel1.SuspendLayout();
             splitContainer3.Panel2.SuspendLayout();
             splitContainer3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -135,7 +134,7 @@
             tabPage2.Padding = new Padding(3);
             tabPage2.Size = new Size(677, 655);
             tabPage2.TabIndex = 1;
-            tabPage2.Text = "tabPage2";
+            tabPage2.Text = "Personal";
             tabPage2.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
@@ -147,16 +146,16 @@
             // splitContainer2.Panel1
             // 
             splitContainer2.Panel1.BackColor = Color.DarkSlateGray;
-            splitContainer2.Panel1.Controls.Add(textBox5);
+            splitContainer2.Panel1.Controls.Add(contactINPUT);
             splitContainer2.Panel1.Controls.Add(label5);
-            splitContainer2.Panel1.Controls.Add(textBox4);
+            splitContainer2.Panel1.Controls.Add(emailINPUT);
             splitContainer2.Panel1.Controls.Add(label4);
-            splitContainer2.Panel1.Controls.Add(textBox3);
+            splitContainer2.Panel1.Controls.Add(addressINPUT);
             splitContainer2.Panel1.Controls.Add(label3);
-            splitContainer2.Panel1.Controls.Add(textBox1);
+            splitContainer2.Panel1.Controls.Add(nameINPUT);
             splitContainer2.Panel1.Controls.Add(label2);
             splitContainer2.Panel1.Controls.Add(label1);
-            splitContainer2.Panel1.Controls.Add(textBox2);
+            splitContainer2.Panel1.Controls.Add(profileSummaryINPUT);
             splitContainer2.Panel1.Controls.Add(button2);
             splitContainer2.Panel1.Controls.Add(pictureBox2);
             splitContainer2.Panel1.Paint += splitContainer2_Panel1_Paint;
@@ -165,21 +164,21 @@
             // 
             splitContainer2.Panel2.BackColor = Color.AliceBlue;
             splitContainer2.Panel2.Controls.Add(label15);
-            splitContainer2.Panel2.Controls.Add(textBox6);
-            splitContainer2.Panel2.Controls.Add(textBox14);
-            splitContainer2.Panel2.Controls.Add(textBox13);
+            splitContainer2.Panel2.Controls.Add(primaryINPUT);
+            splitContainer2.Panel2.Controls.Add(tyearGraduatedINPUT);
+            splitContainer2.Panel2.Controls.Add(tyearINPUT);
             splitContainer2.Panel2.Controls.Add(label14);
-            splitContainer2.Panel2.Controls.Add(textBox12);
+            splitContainer2.Panel2.Controls.Add(tertiaryINPUT);
             splitContainer2.Panel2.Controls.Add(label13);
-            splitContainer2.Panel2.Controls.Add(textBox11);
+            splitContainer2.Panel2.Controls.Add(syearGraduatedINPUT);
             splitContainer2.Panel2.Controls.Add(label12);
-            splitContainer2.Panel2.Controls.Add(textBox10);
-            splitContainer2.Panel2.Controls.Add(textBox9);
-            splitContainer2.Panel2.Controls.Add(textBox8);
+            splitContainer2.Panel2.Controls.Add(syearINPUT);
+            splitContainer2.Panel2.Controls.Add(secondaryINPUT);
+            splitContainer2.Panel2.Controls.Add(pyearGraduatedINPUT);
             splitContainer2.Panel2.Controls.Add(label11);
             splitContainer2.Panel2.Controls.Add(label10);
             splitContainer2.Panel2.Controls.Add(label9);
-            splitContainer2.Panel2.Controls.Add(textBox7);
+            splitContainer2.Panel2.Controls.Add(pyearINPUT);
             splitContainer2.Panel2.Controls.Add(label8);
             splitContainer2.Panel2.Controls.Add(label7);
             splitContainer2.Panel2.Controls.Add(label6);
@@ -189,69 +188,69 @@
             splitContainer2.SplitterDistance = 221;
             splitContainer2.TabIndex = 0;
             // 
-            // textBox5
+            // contactINPUT
             // 
-            textBox5.Location = new Point(20, 543);
-            textBox5.Multiline = true;
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(184, 25);
-            textBox5.TabIndex = 12;
-            textBox5.TextChanged += textBox5_TextChanged_1;
+            contactINPUT.Location = new Point(20, 574);
+            contactINPUT.Multiline = true;
+            contactINPUT.Name = "contactINPUT";
+            contactINPUT.Size = new Size(184, 25);
+            contactINPUT.TabIndex = 12;
+            contactINPUT.TextChanged += textBox5_TextChanged_1;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(21, 514);
+            label5.Location = new Point(21, 545);
             label5.Name = "label5";
             label5.Size = new Size(121, 19);
             label5.TabIndex = 11;
             label5.Text = "Contact Number";
             label5.Click += label5_Click;
             // 
-            // textBox4
+            // emailINPUT
             // 
-            textBox4.Location = new Point(18, 474);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(184, 29);
-            textBox4.TabIndex = 10;
+            emailINPUT.Location = new Point(18, 505);
+            emailINPUT.Multiline = true;
+            emailINPUT.Name = "emailINPUT";
+            emailINPUT.Size = new Size(184, 29);
+            emailINPUT.TabIndex = 10;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(20, 443);
+            label4.Location = new Point(20, 474);
             label4.Name = "label4";
             label4.Size = new Size(107, 19);
             label4.TabIndex = 9;
             label4.Text = "Email Address";
             // 
-            // textBox3
+            // addressINPUT
             // 
-            textBox3.Location = new Point(19, 404);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(184, 27);
-            textBox3.TabIndex = 8;
-            textBox3.TextChanged += textBox3_TextChanged;
+            addressINPUT.Location = new Point(19, 425);
+            addressINPUT.Multiline = true;
+            addressINPUT.Name = "addressINPUT";
+            addressINPUT.Size = new Size(184, 46);
+            addressINPUT.TabIndex = 8;
+            addressINPUT.TextChanged += textBox3_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(20, 376);
+            label3.Location = new Point(20, 397);
             label3.Name = "label3";
             label3.Size = new Size(64, 19);
             label3.TabIndex = 7;
             label3.Text = "Address";
             label3.Click += label3_Click;
             // 
-            // textBox1
+            // nameINPUT
             // 
-            textBox1.Location = new Point(18, 265);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(186, 27);
-            textBox1.TabIndex = 4;
-            textBox1.TextChanged += textBox1_TextChanged_1;
+            nameINPUT.Location = new Point(18, 265);
+            nameINPUT.Name = "nameINPUT";
+            nameINPUT.Size = new Size(186, 27);
+            nameINPUT.TabIndex = 4;
+            nameINPUT.TextChanged += textBox1_TextChanged_1;
             // 
             // label2
             // 
@@ -275,32 +274,34 @@
             label1.Text = "Name";
             label1.Click += label1_Click;
             // 
-            // textBox2
+            // profileSummaryINPUT
             // 
-            textBox2.Location = new Point(18, 334);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(185, 29);
-            textBox2.TabIndex = 6;
-            textBox2.TextChanged += textBox2_TextChanged;
+            profileSummaryINPUT.Location = new Point(18, 334);
+            profileSummaryINPUT.Multiline = true;
+            profileSummaryINPUT.Name = "profileSummaryINPUT";
+            profileSummaryINPUT.Size = new Size(185, 49);
+            profileSummaryINPUT.TabIndex = 6;
+            profileSummaryINPUT.TextChanged += textBox2_TextChanged;
             // 
             // button2
             // 
             button2.BackColor = Color.Gainsboro;
+            button2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(21, 182);
             button2.Name = "button2";
             button2.Size = new Size(163, 39);
             button2.TabIndex = 2;
-            button2.Text = "button2";
+            button2.Text = "Insert mage ";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.BackColor = Color.White;
-            pictureBox2.Location = new Point(0, 0);
+            pictureBox2.Location = new Point(10, 10);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(226, 176);
+            pictureBox2.Size = new Size(202, 161);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
@@ -313,27 +314,27 @@
             label15.TabIndex = 21;
             label15.Text = "Year Graduated";
             // 
-            // textBox6
+            // primaryINPUT
             // 
-            textBox6.Location = new Point(38, 82);
-            textBox6.Multiline = true;
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(371, 24);
-            textBox6.TabIndex = 2;
+            primaryINPUT.Location = new Point(38, 82);
+            primaryINPUT.Multiline = true;
+            primaryINPUT.Name = "primaryINPUT";
+            primaryINPUT.Size = new Size(371, 24);
+            primaryINPUT.TabIndex = 2;
             // 
-            // textBox14
+            // tyearGraduatedINPUT
             // 
-            textBox14.Location = new Point(126, 557);
-            textBox14.Name = "textBox14";
-            textBox14.Size = new Size(177, 27);
-            textBox14.TabIndex = 20;
+            tyearGraduatedINPUT.Location = new Point(126, 557);
+            tyearGraduatedINPUT.Name = "tyearGraduatedINPUT";
+            tyearGraduatedINPUT.Size = new Size(177, 27);
+            tyearGraduatedINPUT.TabIndex = 20;
             // 
-            // textBox13
+            // tyearINPUT
             // 
-            textBox13.Location = new Point(126, 510);
-            textBox13.Name = "textBox13";
-            textBox13.Size = new Size(177, 27);
-            textBox13.TabIndex = 19;
+            tyearINPUT.Location = new Point(126, 510);
+            tyearINPUT.Name = "tyearINPUT";
+            tyearINPUT.Size = new Size(177, 27);
+            tyearINPUT.TabIndex = 19;
             // 
             // label14
             // 
@@ -344,29 +345,30 @@
             label14.TabIndex = 18;
             label14.Text = "Year Entered";
             // 
-            // textBox12
+            // tertiaryINPUT
             // 
-            textBox12.Location = new Point(38, 470);
-            textBox12.Multiline = true;
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(371, 24);
-            textBox12.TabIndex = 17;
+            tertiaryINPUT.Location = new Point(38, 470);
+            tertiaryINPUT.Multiline = true;
+            tertiaryINPUT.Name = "tertiaryINPUT";
+            tertiaryINPUT.Size = new Size(371, 24);
+            tertiaryINPUT.TabIndex = 17;
             // 
             // label13
             // 
             label13.AutoSize = true;
+            label13.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.Location = new Point(16, 430);
             label13.Name = "label13";
-            label13.Size = new Size(62, 19);
+            label13.Size = new Size(69, 19);
             label13.TabIndex = 16;
             label13.Text = "Tertiary";
             // 
-            // textBox11
+            // syearGraduatedINPUT
             // 
-            textBox11.Location = new Point(130, 356);
-            textBox11.Name = "textBox11";
-            textBox11.Size = new Size(177, 27);
-            textBox11.TabIndex = 15;
+            syearGraduatedINPUT.Location = new Point(130, 356);
+            syearGraduatedINPUT.Name = "syearGraduatedINPUT";
+            syearGraduatedINPUT.Size = new Size(177, 27);
+            syearGraduatedINPUT.TabIndex = 15;
             // 
             // label12
             // 
@@ -378,27 +380,27 @@
             label12.Text = "Year Graduated";
             label12.Click += label12_Click;
             // 
-            // textBox10
+            // syearINPUT
             // 
-            textBox10.Location = new Point(130, 313);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(177, 27);
-            textBox10.TabIndex = 13;
+            syearINPUT.Location = new Point(130, 313);
+            syearINPUT.Name = "syearINPUT";
+            syearINPUT.Size = new Size(177, 27);
+            syearINPUT.TabIndex = 13;
             // 
-            // textBox9
+            // secondaryINPUT
             // 
-            textBox9.Location = new Point(38, 265);
-            textBox9.Multiline = true;
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(371, 24);
-            textBox9.TabIndex = 12;
+            secondaryINPUT.Location = new Point(38, 265);
+            secondaryINPUT.Multiline = true;
+            secondaryINPUT.Name = "secondaryINPUT";
+            secondaryINPUT.Size = new Size(371, 24);
+            secondaryINPUT.TabIndex = 12;
             // 
-            // textBox8
+            // pyearGraduatedINPUT
             // 
-            textBox8.Location = new Point(129, 169);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(177, 27);
-            textBox8.TabIndex = 11;
+            pyearGraduatedINPUT.Location = new Point(129, 169);
+            pyearGraduatedINPUT.Name = "pyearGraduatedINPUT";
+            pyearGraduatedINPUT.Size = new Size(177, 27);
+            pyearGraduatedINPUT.TabIndex = 11;
             // 
             // label11
             // 
@@ -413,11 +415,13 @@
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.Location = new Point(12, 233);
             label10.Name = "label10";
-            label10.Size = new Size(80, 19);
+            label10.Size = new Size(85, 19);
             label10.TabIndex = 0;
             label10.Text = "Secondary";
+            label10.Click += label10_Click;
             // 
             // label9
             // 
@@ -428,13 +432,13 @@
             label9.TabIndex = 0;
             label9.Text = "Year Graduated";
             // 
-            // textBox7
+            // pyearINPUT
             // 
-            textBox7.Location = new Point(130, 125);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(177, 27);
-            textBox7.TabIndex = 5;
-            textBox7.TextChanged += textBox7_TextChanged;
+            pyearINPUT.Location = new Point(130, 125);
+            pyearINPUT.Name = "pyearINPUT";
+            pyearINPUT.Size = new Size(177, 27);
+            pyearINPUT.TabIndex = 5;
+            pyearINPUT.TextChanged += textBox7_TextChanged;
             // 
             // label8
             // 
@@ -449,9 +453,10 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.Location = new Point(18, 48);
             label7.Name = "label7";
-            label7.Size = new Size(64, 19);
+            label7.Size = new Size(72, 19);
             label7.TabIndex = 1;
             label7.Text = "Primary";
             // 
@@ -467,15 +472,23 @@
             label6.TabIndex = 0;
             label6.Text = "Educational Background";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.Teal;
+            panel1.Location = new Point(-3, 1);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(452, 44);
+            panel1.TabIndex = 22;
+            // 
             // tabPage3
             // 
             tabPage3.Controls.Add(splitContainer3);
-            tabPage3.Location = new Point(4, 28);
+            tabPage3.Location = new Point(4, 29);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(677, 655);
+            tabPage3.Size = new Size(677, 654);
             tabPage3.TabIndex = 2;
-            tabPage3.Text = "tabPage3";
+            tabPage3.Text = "Other ";
             tabPage3.UseVisualStyleBackColor = true;
             // 
             // splitContainer3
@@ -487,16 +500,15 @@
             // splitContainer3.Panel1
             // 
             splitContainer3.Panel1.BackColor = Color.DarkSlateGray;
-            splitContainer3.Panel1.Controls.Add(textBox21);
-            splitContainer3.Panel1.Controls.Add(textBox20);
-            splitContainer3.Panel1.Controls.Add(textBox19);
+            splitContainer3.Panel1.Controls.Add(skill5INPUT);
+            splitContainer3.Panel1.Controls.Add(skill4INPUT);
+            splitContainer3.Panel1.Controls.Add(language2INPUT);
             splitContainer3.Panel1.Controls.Add(label17);
-            splitContainer3.Panel1.Controls.Add(textBox17);
-            splitContainer3.Panel1.Controls.Add(textBox16);
-            splitContainer3.Panel1.Controls.Add(textBox15);
+            splitContainer3.Panel1.Controls.Add(skill3INPUT);
+            splitContainer3.Panel1.Controls.Add(skill2INPUT);
+            splitContainer3.Panel1.Controls.Add(skill1INPUT);
             splitContainer3.Panel1.Controls.Add(label16);
-            splitContainer3.Panel1.Controls.Add(pictureBox3);
-            splitContainer3.Panel1.Controls.Add(textBox18);
+            splitContainer3.Panel1.Controls.Add(language1INPUT);
             splitContainer3.Panel1.Controls.Add(panel4);
             splitContainer3.Panel1.Controls.Add(panel5);
             splitContainer3.Panel1.ForeColor = Color.Khaki;
@@ -504,54 +516,56 @@
             // splitContainer3.Panel2
             // 
             splitContainer3.Panel2.BackColor = Color.AliceBlue;
-            splitContainer3.Panel2.Controls.Add(textBox30);
+            splitContainer3.Panel2.Controls.Add(button3);
+            splitContainer3.Panel2.Controls.Add(occupation2INPUT);
             splitContainer3.Panel2.Controls.Add(label28);
-            splitContainer3.Panel2.Controls.Add(textBox29);
+            splitContainer3.Panel2.Controls.Add(contact2INPUT);
             splitContainer3.Panel2.Controls.Add(label27);
-            splitContainer3.Panel2.Controls.Add(textBox28);
+            splitContainer3.Panel2.Controls.Add(char2INPUT);
             splitContainer3.Panel2.Controls.Add(label26);
-            splitContainer3.Panel2.Controls.Add(textBox27);
+            splitContainer3.Panel2.Controls.Add(occupation1INPUT);
             splitContainer3.Panel2.Controls.Add(label25);
-            splitContainer3.Panel2.Controls.Add(textBox26);
+            splitContainer3.Panel2.Controls.Add(contact1INPUT);
             splitContainer3.Panel2.Controls.Add(label24);
-            splitContainer3.Panel2.Controls.Add(textBox25);
+            splitContainer3.Panel2.Controls.Add(char1INPUT);
             splitContainer3.Panel2.Controls.Add(label23);
             splitContainer3.Panel2.Controls.Add(label22);
-            splitContainer3.Panel2.Controls.Add(textBox24);
+            splitContainer3.Panel2.Controls.Add(yearEndINPUT);
             splitContainer3.Panel2.Controls.Add(label21);
-            splitContainer3.Panel2.Controls.Add(textBox23);
+            splitContainer3.Panel2.Controls.Add(yearStartINPUT);
             splitContainer3.Panel2.Controls.Add(label20);
             splitContainer3.Panel2.Controls.Add(label19);
-            splitContainer3.Panel2.Controls.Add(textBox22);
+            splitContainer3.Panel2.Controls.Add(companyNameINPUT);
             splitContainer3.Panel2.Controls.Add(label18);
             splitContainer3.Panel2.Controls.Add(panel2);
             splitContainer3.Panel2.Controls.Add(panel3);
             splitContainer3.Panel2.Paint += splitContainer3_Panel2_Paint;
-            splitContainer3.Size = new Size(671, 649);
+            splitContainer3.Size = new Size(671, 648);
             splitContainer3.SplitterDistance = 223;
             splitContainer3.TabIndex = 0;
             // 
-            // textBox20
+            // skill5INPUT
             // 
-            textBox20.Location = new Point(29, 359);
-            textBox20.Multiline = true;
-            textBox20.Name = "textBox20";
-            textBox20.Size = new Size(161, 27);
-            textBox20.TabIndex = 10;
+            skill5INPUT.Location = new Point(30, 281);
+            skill5INPUT.Multiline = true;
+            skill5INPUT.Name = "skill5INPUT";
+            skill5INPUT.Size = new Size(161, 27);
+            skill5INPUT.TabIndex = 11;
             // 
-            // textBox19
+            // skill4INPUT
             // 
-            textBox19.Location = new Point(26, 538);
-            textBox19.Name = "textBox19";
-            textBox19.Size = new Size(161, 27);
-            textBox19.TabIndex = 9;
+            skill4INPUT.Location = new Point(32, 226);
+            skill4INPUT.Multiline = true;
+            skill4INPUT.Name = "skill4INPUT";
+            skill4INPUT.Size = new Size(161, 27);
+            skill4INPUT.TabIndex = 10;
             // 
-            // textBox18
+            // language2INPUT
             // 
-            textBox18.Location = new Point(26, 489);
-            textBox18.Name = "textBox18";
-            textBox18.Size = new Size(161, 27);
-            textBox18.TabIndex = 8;
+            language2INPUT.Location = new Point(26, 472);
+            language2INPUT.Name = "language2INPUT";
+            language2INPUT.Size = new Size(161, 27);
+            language2INPUT.TabIndex = 9;
             // 
             // label17
             // 
@@ -559,28 +573,37 @@
             label17.BackColor = Color.Teal;
             label17.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label17.ForeColor = Color.White;
-            label17.Location = new Point(16, 447);
+            label17.Location = new Point(16, 356);
             label17.Name = "label17";
             label17.Size = new Size(80, 19);
             label17.TabIndex = 7;
             label17.Text = "Language";
+            label17.Click += label17_Click;
             // 
-            // textBox17
+            // skill3INPUT
             // 
-            textBox17.Location = new Point(30, 319);
-            textBox17.Multiline = true;
-            textBox17.Name = "textBox17";
-            textBox17.Size = new Size(161, 27);
-            textBox17.TabIndex = 6;
-            textBox17.TextChanged += textBox17_TextChanged;
+            skill3INPUT.Location = new Point(33, 171);
+            skill3INPUT.Multiline = true;
+            skill3INPUT.Name = "skill3INPUT";
+            skill3INPUT.Size = new Size(161, 27);
+            skill3INPUT.TabIndex = 6;
+            skill3INPUT.TextChanged += textBox17_TextChanged;
             // 
-            // textBox15
+            // skill2INPUT
             // 
-            textBox15.Location = new Point(29, 232);
-            textBox15.Multiline = true;
-            textBox15.Name = "textBox15";
-            textBox15.Size = new Size(161, 34);
-            textBox15.TabIndex = 4;
+            skill2INPUT.Location = new Point(31, 121);
+            skill2INPUT.Multiline = true;
+            skill2INPUT.Name = "skill2INPUT";
+            skill2INPUT.Size = new Size(161, 27);
+            skill2INPUT.TabIndex = 5;
+            // 
+            // skill1INPUT
+            // 
+            skill1INPUT.Location = new Point(31, 66);
+            skill1INPUT.Multiline = true;
+            skill1INPUT.Name = "skill1INPUT";
+            skill1INPUT.Size = new Size(161, 34);
+            skill1INPUT.TabIndex = 4;
             // 
             // label16
             // 
@@ -588,28 +611,52 @@
             label16.BackColor = Color.Teal;
             label16.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label16.ForeColor = Color.White;
-            label16.Location = new Point(13, 198);
+            label16.Location = new Point(15, 12);
             label16.Name = "label16";
             label16.Size = new Size(52, 19);
             label16.TabIndex = 3;
             label16.Text = "Skills";
             // 
-            // pictureBox3
+            // language1INPUT
             // 
-            pictureBox3.BackColor = Color.White;
-            pictureBox3.Location = new Point(-7, -3);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(239, 195);
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
+            language1INPUT.Location = new Point(28, 410);
+            language1INPUT.Name = "language1INPUT";
+            language1INPUT.Size = new Size(161, 27);
+            language1INPUT.TabIndex = 8;
             // 
-            // textBox30
+            // panel4
             // 
-            textBox30.Location = new Point(122, 538);
-            textBox30.Multiline = true;
-            textBox30.Name = "textBox30";
-            textBox30.Size = new Size(266, 27);
-            textBox30.TabIndex = 20;
+            panel4.BackColor = Color.Teal;
+            panel4.Location = new Point(-109, 0);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(444, 42);
+            panel4.TabIndex = 23;
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Teal;
+            panel5.Location = new Point(-111, 352);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(444, 31);
+            panel5.TabIndex = 24;
+            // 
+            // button3
+            // 
+            button3.Location = new Point(316, 580);
+            button3.Name = "button3";
+            button3.Size = new Size(118, 29);
+            button3.TabIndex = 23;
+            button3.Text = "GENERATE";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // occupation2INPUT
+            // 
+            occupation2INPUT.Location = new Point(122, 538);
+            occupation2INPUT.Multiline = true;
+            occupation2INPUT.Name = "occupation2INPUT";
+            occupation2INPUT.Size = new Size(266, 27);
+            occupation2INPUT.TabIndex = 20;
             // 
             // label28
             // 
@@ -620,12 +667,12 @@
             label28.TabIndex = 19;
             label28.Text = "Occupation";
             // 
-            // textBox29
+            // contact2INPUT
             // 
-            textBox29.Location = new Point(157, 487);
-            textBox29.Name = "textBox29";
-            textBox29.Size = new Size(175, 27);
-            textBox29.TabIndex = 18;
+            contact2INPUT.Location = new Point(157, 487);
+            contact2INPUT.Name = "contact2INPUT";
+            contact2INPUT.Size = new Size(175, 27);
+            contact2INPUT.TabIndex = 18;
             // 
             // label27
             // 
@@ -636,13 +683,13 @@
             label27.TabIndex = 17;
             label27.Text = "Contact Number";
             // 
-            // textBox28
+            // char2INPUT
             // 
-            textBox28.Location = new Point(85, 420);
-            textBox28.Multiline = true;
-            textBox28.Name = "textBox28";
-            textBox28.Size = new Size(305, 34);
-            textBox28.TabIndex = 16;
+            char2INPUT.Location = new Point(85, 420);
+            char2INPUT.Multiline = true;
+            char2INPUT.Name = "char2INPUT";
+            char2INPUT.Size = new Size(305, 34);
+            char2INPUT.TabIndex = 16;
             // 
             // label26
             // 
@@ -653,13 +700,13 @@
             label26.TabIndex = 15;
             label26.Text = "Name";
             // 
-            // textBox27
+            // occupation1INPUT
             // 
-            textBox27.Location = new Point(122, 330);
-            textBox27.Multiline = true;
-            textBox27.Name = "textBox27";
-            textBox27.Size = new Size(266, 27);
-            textBox27.TabIndex = 14;
+            occupation1INPUT.Location = new Point(122, 330);
+            occupation1INPUT.Multiline = true;
+            occupation1INPUT.Name = "occupation1INPUT";
+            occupation1INPUT.Size = new Size(266, 27);
+            occupation1INPUT.TabIndex = 14;
             // 
             // label25
             // 
@@ -670,13 +717,13 @@
             label25.TabIndex = 13;
             label25.Text = "Occupation";
             // 
-            // textBox26
+            // contact1INPUT
             // 
-            textBox26.Location = new Point(157, 283);
-            textBox26.Name = "textBox26";
-            textBox26.Size = new Size(175, 27);
-            textBox26.TabIndex = 12;
-            textBox26.TextChanged += textBox26_TextChanged;
+            contact1INPUT.Location = new Point(157, 283);
+            contact1INPUT.Name = "contact1INPUT";
+            contact1INPUT.Size = new Size(175, 27);
+            contact1INPUT.TabIndex = 12;
+            contact1INPUT.TextChanged += textBox26_TextChanged;
             // 
             // label24
             // 
@@ -688,14 +735,14 @@
             label24.Text = "Contact Number";
             label24.Click += label24_Click;
             // 
-            // textBox25
+            // char1INPUT
             // 
-            textBox25.Location = new Point(80, 232);
-            textBox25.Multiline = true;
-            textBox25.Name = "textBox25";
-            textBox25.Size = new Size(305, 34);
-            textBox25.TabIndex = 10;
-            textBox25.TextChanged += textBox25_TextChanged;
+            char1INPUT.Location = new Point(80, 232);
+            char1INPUT.Multiline = true;
+            char1INPUT.Name = "char1INPUT";
+            char1INPUT.Size = new Size(305, 34);
+            char1INPUT.TabIndex = 10;
+            char1INPUT.TextChanged += textBox25_TextChanged;
             // 
             // label23
             // 
@@ -719,12 +766,12 @@
             label22.TabIndex = 8;
             label22.Text = "Character Reference";
             // 
-            // textBox24
+            // yearEndINPUT
             // 
-            textBox24.Location = new Point(292, 127);
-            textBox24.Name = "textBox24";
-            textBox24.Size = new Size(96, 27);
-            textBox24.TabIndex = 7;
+            yearEndINPUT.Location = new Point(292, 127);
+            yearEndINPUT.Name = "yearEndINPUT";
+            yearEndINPUT.Size = new Size(96, 27);
+            yearEndINPUT.TabIndex = 7;
             // 
             // label21
             // 
@@ -735,12 +782,12 @@
             label21.TabIndex = 6;
             label21.Text = "-";
             // 
-            // textBox23
+            // yearStartINPUT
             // 
-            textBox23.Location = new Point(171, 127);
-            textBox23.Name = "textBox23";
-            textBox23.Size = new Size(96, 27);
-            textBox23.TabIndex = 5;
+            yearStartINPUT.Location = new Point(171, 127);
+            yearStartINPUT.Name = "yearStartINPUT";
+            yearStartINPUT.Size = new Size(96, 27);
+            yearStartINPUT.TabIndex = 5;
             // 
             // label20
             // 
@@ -760,13 +807,13 @@
             label19.TabIndex = 2;
             label19.Text = "Company Name";
             // 
-            // textBox22
+            // companyNameINPUT
             // 
-            textBox22.Location = new Point(135, 77);
-            textBox22.Multiline = true;
-            textBox22.Name = "textBox22";
-            textBox22.Size = new Size(250, 34);
-            textBox22.TabIndex = 1;
+            companyNameINPUT.Location = new Point(135, 77);
+            companyNameINPUT.Multiline = true;
+            companyNameINPUT.Name = "companyNameINPUT";
+            companyNameINPUT.Size = new Size(250, 34);
+            companyNameINPUT.TabIndex = 1;
             // 
             // label18
             // 
@@ -780,6 +827,22 @@
             label18.TabIndex = 0;
             label18.Text = "Work Experience";
             label18.Click += label18_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.Teal;
+            panel2.Location = new Point(1, 0);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(444, 51);
+            panel2.TabIndex = 21;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Teal;
+            panel3.Location = new Point(0, 169);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(444, 51);
+            panel3.TabIndex = 22;
             // 
             // pictureBox1
             // 
@@ -799,70 +862,15 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // panel1
-            // 
-            panel1.BackColor = Color.Teal;
-            panel1.Location = new Point(-3, 1);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(452, 44);
-            panel1.TabIndex = 22;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Teal;
-            panel2.Location = new Point(1, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(444, 51);
-            panel2.TabIndex = 21;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.Teal;
-            panel3.Location = new Point(0, 169);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(444, 51);
-            panel3.TabIndex = 22;
-            // 
-            // textBox21
-            // 
-            textBox21.Location = new Point(30, 401);
-            textBox21.Multiline = true;
-            textBox21.Name = "textBox21";
-            textBox21.Size = new Size(161, 27);
-            textBox21.TabIndex = 11;
-            // 
-            // textBox16
-            // 
-            textBox16.Location = new Point(28, 278);
-            textBox16.Multiline = true;
-            textBox16.Name = "textBox16";
-            textBox16.Size = new Size(161, 27);
-            textBox16.TabIndex = 5;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Teal;
-            panel4.Location = new Point(-111, 192);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(444, 31);
-            panel4.TabIndex = 23;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.Teal;
-            panel5.Location = new Point(-111, 443);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(444, 31);
-            panel5.TabIndex = 24;
-            // 
             // SEVILLANO
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1149, 654);
+            ClientSize = new Size(680, 654);
             Controls.Add(tabControl1);
             Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Name = "SEVILLANO";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "SEVILLANO";
             Load += SEVILLANO_Load;
             tabControl1.ResumeLayout(false);
@@ -881,7 +889,6 @@
             splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer3).EndInit();
             splitContainer3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -895,18 +902,18 @@
         private PictureBox pictureBox2;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox nameINPUT;
+        private TextBox profileSummaryINPUT;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox addressINPUT;
         private Label label5;
-        private TextBox textBox4;
+        private TextBox emailINPUT;
         private Label label4;
-        private TextBox textBox5;
+        private TextBox contactINPUT;
         private Label label7;
         private Label label6;
         private Label label8;
-        private TextBox textBox6;
+        private TextBox primaryINPUT;
         private TabPage tabPage1;
         private SplitContainer splitContainer1;
         private PictureBox pictureBox1;
@@ -914,49 +921,48 @@
         private Label label11;
         private Label label10;
         private Label label9;
-        private TextBox textBox7;
-        private TextBox textBox10;
-        private TextBox textBox9;
-        private TextBox textBox8;
-        private TextBox textBox11;
+        private TextBox pyearINPUT;
+        private TextBox syearINPUT;
+        private TextBox secondaryINPUT;
+        private TextBox pyearGraduatedINPUT;
+        private TextBox syearGraduatedINPUT;
         private Label label12;
-        private TextBox textBox14;
-        private TextBox textBox13;
+        private TextBox tyearGraduatedINPUT;
+        private TextBox tyearINPUT;
         private Label label14;
-        private TextBox textBox12;
+        private TextBox tertiaryINPUT;
         private Label label13;
         private Label label15;
         private TabPage tabPage3;
         private SplitContainer splitContainer3;
-        private PictureBox pictureBox3;
-        private TextBox textBox16;
-        private TextBox textBox15;
+        private TextBox skill2INPUT;
+        private TextBox skill1INPUT;
         private Label label16;
-        private TextBox textBox17;
-        private TextBox textBox21;
-        private TextBox textBox20;
-        private TextBox textBox19;
-        private TextBox textBox18;
+        private TextBox skill3INPUT;
+        private TextBox skill5INPUT;
+        private TextBox skill4INPUT;
+        private TextBox language2INPUT;
+        private TextBox language1INPUT;
         private Label label17;
         private Label label18;
-        private TextBox textBox24;
+        private TextBox yearEndINPUT;
         private Label label21;
-        private TextBox textBox23;
+        private TextBox yearStartINPUT;
         private Label label20;
         private Label label19;
-        private TextBox textBox22;
-        private TextBox textBox25;
+        private TextBox companyNameINPUT;
+        private TextBox char1INPUT;
         private Label label23;
         private Label label22;
         private Label label24;
-        private TextBox textBox26;
-        private TextBox textBox28;
+        private TextBox contact1INPUT;
+        private TextBox char2INPUT;
         private Label label26;
-        private TextBox textBox27;
+        private TextBox occupation1INPUT;
         private Label label25;
-        private TextBox textBox29;
+        private TextBox contact2INPUT;
         private Label label27;
-        private TextBox textBox30;
+        private TextBox occupation2INPUT;
         private Label label28;
         private MenuStrip menuStrip1;
         private Panel panel1;
@@ -964,5 +970,6 @@
         private Panel panel4;
         private Panel panel2;
         private Panel panel3;
+        private Button button3;
     }
 }
