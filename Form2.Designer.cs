@@ -1,4 +1,4 @@
-﻿namespace WinFormsApp1
+﻿    namespace WinFormsApp1
 {
     partial class Form2
     {
@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             button1 = new Button();
             SuspendLayout();
             // 
@@ -48,6 +49,8 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Silver;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1169, 716);
             Controls.Add(button1);
             Name = "Form2";

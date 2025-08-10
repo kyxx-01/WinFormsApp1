@@ -24,6 +24,24 @@ namespace WinFormsApp1
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            // START button design for button1 in Form2
+            button1.BackColor = Color.SeaGreen;
+            button1.ForeColor = Color.White;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.Font = new Font("Segoe UI", 48, FontStyle.Bold);
+            button1.Cursor = Cursors.Hand;
+
+            // Rounded corners
+            button1.Region = System.Drawing.Region.FromHrgn(
+                CreateRoundRectRgn(0, 0, button1.Width, button1.Height, 25, 25));
+
+            // Hover effect
+            button1.MouseEnter += (s, eArgs) => button1.BackColor = Color.MediumSeaGreen;
+            button1.MouseLeave += (s, eArgs) => button1.BackColor = Color.SeaGreen;
+
+            // Optional: Label it "START"
+            button1.Text = "START";
 
         }
 
@@ -44,5 +62,12 @@ namespace WinFormsApp1
             this.Hide();
 
         }
+
+        [System.Runtime.InteropServices.DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        private static extern IntPtr CreateRoundRectRgn(
+    int nLeftRect, int nTopRect, int nRightRect, int nBottomRect,
+    int nWidthEllipse, int nHeightEllipse
+);
+
     }
 }

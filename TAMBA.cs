@@ -12,57 +12,110 @@ namespace WinFormsApp1
 {
     public partial class TAMBA : Form
     {
+        private int scrollOffset = 0;
+        
+
         public TAMBA()
         {
             InitializeComponent();
+
         }
 
-        private void TAMBA_Load(object sender, EventArgs e)
-        {
-            tabControl1.DrawMode = TabDrawMode.OwnerDrawFixed;
-            tabControl1.DrawItem += TabControl1_DrawItem;
-
-            tabControl1.TabPages[0].Text = "Personal Information";
-            tabControl1.TabPages[1].Text = "Education";
-            tabControl1.TabPages[2].Text = "Work Experience";
-            tabControl1.TabPages[3].Text = "Skills";
-        }
-
-        private void TabControl1_DrawItem(object sender, DrawItemEventArgs e)
-        {
-            Graphics g = e.Graphics;
-            Rectangle tabRect = e.Bounds;
-            TabPage tabPage = tabControl1.TabPages[e.Index];
-
-            // Pick a color for each tab manually (simplified)
-            Color backColor = Color.LightGray;
-            if (e.Index == 0) backColor = Color.FromArgb(192, 192, 192); // Personal Info
-            else if (e.Index == 1) backColor = Color.FromArgb(192, 192, 192); // Education
-            else if (e.Index == 2) backColor = Color.FromArgb(192, 192, 192);   // Work Experience
-            else if (e.Index == 3) backColor = Color.FromArgb(192, 192, 192);  // Skills
-
-            using (SolidBrush brush = new SolidBrush(backColor))
-            using (SolidBrush textBrush = new SolidBrush(Color.White))
-            using (StringFormat sf = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center })
-            {
-                g.FillRectangle(brush, tabRect);
-                g.DrawString(tabPage.Text, e.Font, textBrush, tabRect, sf);
-            }
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.Title = "Select an image";
-                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;";
-
+                openFileDialog.Title = "Insert Image";
+                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    // Load and display the selected image in the PictureBox
-                    pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+                    try
+                    {
+                        Image img = Image.FromFile(openFileDialog.FileName);
+                        pictureBox1.Image = img;
+                        pictureBox1.SizeMode = PictureBoxSizeMode.Zoom; // Adjust image display mode as needed
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error loading image: " + ex.Message);
+                    }
                 }
             }
+        }
+
+        private void TAMBA_Resize(object sender, EventArgs e)
+        {
+            scrollPanel.Location = new Point(10, 10);
+            scrollPanel.Size = new Size(this.ClientSize.Width - vScrollBar1.Width - 20, this.ClientSize.Height - 20);
+
+            vScrollBar1.Location = new Point(this.ClientSize.Width - vScrollBar1.Width - 10, 10);
+            vScrollBar1.Height = this.ClientSize.Height - 20;
+
+            // Update scroll range in case size change affects scroll logic
+            scrollPanel_Resize(sender, e);
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            int newOffset = e.NewValue;
+            int delta = newOffset - scrollOffset;
+
+            foreach (Control ctrl in scrollPanel.Controls)
+            {
+                ctrl.Top -= delta;
+            }
+
+            scrollOffset = newOffset;
+        }
+
+        protected override void OnLoad(EventArgs e)
+
+
+        {
+            base.OnLoad(e);
+
+            base.OnLoad(e);
+
+            // Find the tallest control inside scrollPanel
+            int contentHeight = 0;
+            foreach (Control ctrl in scrollPanel.Controls)
+            {
+                contentHeight = Math.Max(contentHeight, ctrl.Bottom);
+            }
+
+            int visibleHeight = scrollPanel.Height;
+
+            vScrollBar1.Minimum = 0;
+            vScrollBar1.LargeChange = visibleHeight;
+            vScrollBar1.SmallChange = 20;
+
+            // Allow scrolling up to bottom of last control
+            vScrollBar1.Maximum = Math.Max(0, contentHeight - visibleHeight);
+            vScrollBar1.Value = 0;
+
+            scrollOffset = 0;
+
+
+        }
+
+        private void scrollPanel_Resize(object sender, EventArgs e)
+        {
+            int contentHeight = 0;
+            foreach (Control ctrl in scrollPanel.Controls)
+            {
+                contentHeight = Math.Max(contentHeight, ctrl.Bottom);
+            }
+
+            int visibleHeight = scrollPanel.Height;
+
+            vScrollBar1.LargeChange = visibleHeight;
+            vScrollBar1.Maximum = Math.Max(0, contentHeight - visibleHeight);
+        }
+
+        private void scrollPanel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -71,5 +124,46 @@ namespace WinFormsApp1
             Form1 form1 = new Form1();
             form1.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TAMBACV tAMBACV = new TAMBACV();
+
+            // Pass values to the SAME instance you're about to show
+            tAMBACV.pictureBox10.Image = pictureBox1.Image;
+            tAMBACV.CNAME0.Text = CNAME.Text;
+            tAMBACV.CNUM0.Text = CNUM.Text;
+            tAMBACV.CEMAIL0.Text = CEMAIL.Text;
+            tAMBACV.CADDRESS0.Text = CADDRESS.Text;
+            tAMBACV.CPRIMARY0.Text = CPRIMARY.Text;
+            tAMBACV.CSECONDARY0.Text = CSECONDARY.Text;
+            tAMBACV.CTERTIARY0.Text = CTERTIARY.Text;
+            tAMBACV.CYR1E0.Text = CYR1E.Text;
+            tAMBACV.CYR2E0.Text = CYR2E.Text;
+            tAMBACV.CYR3E0.Text = CYR3E.Text;
+            tAMBACV.CCOMP10.Text = CCOMP1.Text;
+            tAMBACV.CCOMP20.Text = CCOMP2.Text;
+            tAMBACV.CCOMP30.Text = CCOMP3.Text;
+            tAMBACV.CYOE10.Text = CYOE1.Text;
+            tAMBACV.CYOE20.Text = CYOE2.Text;
+            tAMBACV.CYOE30.Text = CYOE3.Text;
+            tAMBACV.CSKI10.Text = CSKI1.Text;
+            tAMBACV.CSKI20.Text = CSKI2.Text;
+            tAMBACV.CSKI30.Text = CSKI3.Text;
+            tAMBACV.CREF10.Text = CREF1.Text;
+            tAMBACV.CREF20.Text = CREF2.Text;
+            tAMBACV.COCC10.Text = COCC1.Text;
+            tAMBACV.COCC20.Text = COCC2.Text;
+            tAMBACV.CCON10.Text = CCON1.Text;
+            tAMBACV.CCON20.Text = CCON2.Text;
+
+            tAMBACV.Show();
+        }
+
+
+
+
+
     }
 }
