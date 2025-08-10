@@ -235,5 +235,10 @@ namespace WinFormsApp1
             resume.contact2TB.Text = contact2INPUT.Text;
             resume.Show();
         }
+
+        private void secondaryINPUT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
