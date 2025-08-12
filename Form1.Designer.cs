@@ -76,7 +76,7 @@
             button2.Name = "button2";
             button2.Size = new Size(168, 90);
             button2.TabIndex = 5;
-            button2.Text = "Calculator";
+            button2.Text = "CALCULATOR";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
@@ -108,7 +108,7 @@
             // 
             button4.BackColor = SystemColors.ControlDark;
             button4.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(557, 153);
+            button4.Location = new Point(557, 208);
             button4.Name = "button4";
             button4.Size = new Size(311, 104);
             button4.TabIndex = 2;
@@ -120,7 +120,7 @@
             // 
             button3.BackColor = SystemColors.ControlDark;
             button3.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(144, 153);
+            button3.Location = new Point(144, 208);
             button3.Name = "button3";
             button3.Size = new Size(311, 104);
             button3.TabIndex = 1;
@@ -131,6 +131,7 @@
             // MENU
             // 
             MENU.AutoSize = true;
+            MENU.BackColor = Color.SlateGray;
             MENU.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             MENU.Location = new Point(388, 29);
             MENU.Name = "MENU";
