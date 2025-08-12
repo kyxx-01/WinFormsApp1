@@ -197,9 +197,15 @@ namespace WinFormsApp1
 
         }
 
+
+
+
         private void button3_Click(object sender, EventArgs e)
         {
+            // Add Hover effect events to the button
+            button3.FlatAppearance.MouseOverBackColor = Color.LightBlue;
             CV_PREVIEW resume = new CV_PREVIEW();
+
             //first tab
             resume.profilePicBox.Image = pictureBox2.Image;
             resume.nameTB.Text = nameINPUT.Text;
@@ -213,6 +219,9 @@ namespace WinFormsApp1
             resume.secondaryTB.Text = secondaryINPUT.Text;
             resume.syearTB.Text = syearINPUT.Text;
             resume.syearGraduatedTB.Text = syearGraduatedINPUT.Text;
+            resume.SecondaryAddTB.Text= SecondaryAddINPUT.Text;
+            resume.YearAddTB.Text = YearAddINPUT.Text;
+            resume.YearGradTB.Text = YearGradINPUT.Text;
             resume.tertiaryTB.Text = tertiaryINPUT.Text;
             resume.tyearTB.Text = tyearINPUT.Text;
             resume.tyearGraduatedTB.Text = tyearGraduatedINPUT.Text;
@@ -239,6 +248,31 @@ namespace WinFormsApp1
         private void secondaryINPUT_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void syearGraduatedINPUT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox100_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tertiaryINPUT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

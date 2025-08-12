@@ -43,6 +43,11 @@
             profileSummaryINPUT = new TextBox();
             button2 = new Button();
             pictureBox2 = new PictureBox();
+            YearGradINPUT = new TextBox();
+            YearAddINPUT = new TextBox();
+            label30 = new Label();
+            label29 = new Label();
+            SecondaryAddINPUT = new TextBox();
             label15 = new Label();
             primaryINPUT = new TextBox();
             tyearGraduatedINPUT = new TextBox();
@@ -101,11 +106,6 @@
             panel3 = new Panel();
             pictureBox1 = new PictureBox();
             button1 = new Button();
-            textBox1 = new TextBox();
-            label29 = new Label();
-            textBox2 = new TextBox();
-            label30 = new Label();
-            textBox3 = new TextBox();
             tabControl1.SuspendLayout();
             tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
@@ -168,11 +168,11 @@
             // splitContainer2.Panel2
             // 
             splitContainer2.Panel2.BackColor = Color.AliceBlue;
-            splitContainer2.Panel2.Controls.Add(textBox3);
+            splitContainer2.Panel2.Controls.Add(YearGradINPUT);
+            splitContainer2.Panel2.Controls.Add(YearAddINPUT);
             splitContainer2.Panel2.Controls.Add(label30);
-            splitContainer2.Panel2.Controls.Add(textBox2);
             splitContainer2.Panel2.Controls.Add(label29);
-            splitContainer2.Panel2.Controls.Add(textBox1);
+            splitContainer2.Panel2.Controls.Add(SecondaryAddINPUT);
             splitContainer2.Panel2.Controls.Add(label15);
             splitContainer2.Panel2.Controls.Add(primaryINPUT);
             splitContainer2.Panel2.Controls.Add(tyearGraduatedINPUT);
@@ -210,9 +210,11 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(21, 545);
             label5.Name = "label5";
-            label5.Size = new Size(121, 19);
+            label5.Size = new Size(131, 19);
             label5.TabIndex = 11;
             label5.Text = "Contact Number";
             label5.Click += label5_Click;
@@ -228,9 +230,11 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
             label4.Location = new Point(20, 474);
             label4.Name = "label4";
-            label4.Size = new Size(107, 19);
+            label4.Size = new Size(116, 19);
             label4.TabIndex = 9;
             label4.Text = "Email Address";
             // 
@@ -246,10 +250,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(20, 397);
             label3.Name = "label3";
-            label3.Size = new Size(64, 19);
+            label3.Size = new Size(68, 19);
             label3.TabIndex = 7;
             label3.Text = "Address";
             label3.Click += label3_Click;
@@ -265,10 +270,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
             label2.Location = new Point(19, 305);
             label2.Name = "label2";
-            label2.Size = new Size(126, 19);
+            label2.Size = new Size(136, 19);
             label2.TabIndex = 5;
             label2.Text = "Profile Summary";
             label2.Click += label2_Click;
@@ -276,10 +282,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
             label1.Location = new Point(21, 236);
             label1.Name = "label1";
-            label1.Size = new Size(49, 19);
+            label1.Size = new Size(51, 19);
             label1.TabIndex = 3;
             label1.Text = "Name";
             label1.Click += label1_Click;
@@ -314,6 +321,46 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            // 
+            // YearGradINPUT
+            // 
+            YearGradINPUT.Location = new Point(130, 428);
+            YearGradINPUT.Name = "YearGradINPUT";
+            YearGradINPUT.Size = new Size(177, 27);
+            YearGradINPUT.TabIndex = 27;
+            // 
+            // YearAddINPUT
+            // 
+            YearAddINPUT.Location = new Point(130, 390);
+            YearAddINPUT.Name = "YearAddINPUT";
+            YearAddINPUT.Size = new Size(177, 27);
+            YearAddINPUT.TabIndex = 26;
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Location = new Point(8, 431);
+            label30.Name = "label30";
+            label30.Size = new Size(112, 19);
+            label30.TabIndex = 25;
+            label30.Text = "Year Graduated";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Location = new Point(12, 391);
+            label29.Name = "label29";
+            label29.Size = new Size(96, 19);
+            label29.TabIndex = 24;
+            label29.Text = "Year Entered";
+            // 
+            // SecondaryAddINPUT
+            // 
+            SecondaryAddINPUT.Location = new Point(38, 351);
+            SecondaryAddINPUT.Multiline = true;
+            SecondaryAddINPUT.Name = "SecondaryAddINPUT";
+            SecondaryAddINPUT.Size = new Size(371, 24);
+            SecondaryAddINPUT.TabIndex = 23;
             // 
             // label15
             // 
@@ -357,17 +404,18 @@
             // 
             // tertiaryINPUT
             // 
-            tertiaryINPUT.Location = new Point(38, 492);
+            tertiaryINPUT.Location = new Point(38, 489);
             tertiaryINPUT.Multiline = true;
             tertiaryINPUT.Name = "tertiaryINPUT";
             tertiaryINPUT.Size = new Size(371, 24);
             tertiaryINPUT.TabIndex = 17;
+            tertiaryINPUT.TextChanged += tertiaryINPUT_TextChanged;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.Location = new Point(16, 462);
+            label13.Location = new Point(16, 463);
             label13.Name = "label13";
             label13.Size = new Size(69, 19);
             label13.TabIndex = 16;
@@ -375,15 +423,16 @@
             // 
             // syearGraduatedINPUT
             // 
-            syearGraduatedINPUT.Location = new Point(130, 310);
+            syearGraduatedINPUT.Location = new Point(130, 308);
             syearGraduatedINPUT.Name = "syearGraduatedINPUT";
             syearGraduatedINPUT.Size = new Size(177, 27);
             syearGraduatedINPUT.TabIndex = 15;
+            syearGraduatedINPUT.TextChanged += syearGraduatedINPUT_TextChanged;
             // 
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(9, 308);
+            label12.Location = new Point(8, 306);
             label12.Name = "label12";
             label12.Size = new Size(112, 19);
             label12.TabIndex = 14;
@@ -392,14 +441,14 @@
             // 
             // syearINPUT
             // 
-            syearINPUT.Location = new Point(130, 268);
+            syearINPUT.Location = new Point(130, 269);
             syearINPUT.Name = "syearINPUT";
             syearINPUT.Size = new Size(177, 27);
             syearINPUT.TabIndex = 13;
             // 
             // secondaryINPUT
             // 
-            secondaryINPUT.Location = new Point(38, 227);
+            secondaryINPUT.Location = new Point(38, 228);
             secondaryINPUT.Multiline = true;
             secondaryINPUT.Name = "secondaryINPUT";
             secondaryINPUT.Size = new Size(371, 24);
@@ -416,7 +465,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(13, 268);
+            label11.Location = new Point(11, 271);
             label11.Name = "label11";
             label11.Size = new Size(96, 19);
             label11.TabIndex = 10;
@@ -427,7 +476,7 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(12, 197);
+            label10.Location = new Point(12, 198);
             label10.Name = "label10";
             label10.Size = new Size(85, 19);
             label10.TabIndex = 0;
@@ -494,10 +543,10 @@
             // tabPage3
             // 
             tabPage3.Controls.Add(splitContainer3);
-            tabPage3.Location = new Point(4, 29);
+            tabPage3.Location = new Point(4, 28);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(677, 654);
+            tabPage3.Size = new Size(677, 655);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Other ";
             tabPage3.UseVisualStyleBackColor = true;
@@ -551,7 +600,7 @@
             splitContainer3.Panel2.Controls.Add(panel2);
             splitContainer3.Panel2.Controls.Add(panel3);
             splitContainer3.Panel2.Paint += splitContainer3_Panel2_Paint;
-            splitContainer3.Size = new Size(671, 648);
+            splitContainer3.Size = new Size(671, 649);
             splitContainer3.SplitterDistance = 223;
             splitContainer3.TabIndex = 0;
             // 
@@ -653,12 +702,15 @@
             // 
             // button3
             // 
+            button3.BackColor = Color.DarkSlateGray;
+            button3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
             button3.Location = new Point(316, 580);
             button3.Name = "button3";
             button3.Size = new Size(118, 29);
             button3.TabIndex = 23;
             button3.Text = "GENERATE";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // occupation2INPUT
@@ -873,46 +925,6 @@
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(38, 359);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(371, 24);
-            textBox1.TabIndex = 23;
-            // 
-            // label29
-            // 
-            label29.AutoSize = true;
-            label29.Location = new Point(13, 393);
-            label29.Name = "label29";
-            label29.Size = new Size(96, 19);
-            label29.TabIndex = 24;
-            label29.Text = "Year Entered";
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(130, 395);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(177, 27);
-            textBox2.TabIndex = 25;
-            // 
-            // label30
-            // 
-            label30.AutoSize = true;
-            label30.Location = new Point(18, 432);
-            label30.Name = "label30";
-            label30.Size = new Size(112, 19);
-            label30.TabIndex = 26;
-            label30.Text = "Year Graduated";
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(130, 432);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(177, 27);
-            textBox3.TabIndex = 27;
-            // 
             // SEVILLANO
             // 
             AutoScaleDimensions = new SizeF(9F, 19F);
@@ -980,7 +992,6 @@
         private Label label12;
         private TextBox tyearGraduatedINPUT;
         private TextBox tyearINPUT;
-        private Label label14;
         private TextBox tertiaryINPUT;
         private Label label13;
         private Label label15;
@@ -1022,10 +1033,11 @@
         private Panel panel2;
         private Panel panel3;
         private Button button3;
-        private TextBox textBox1;
-        private TextBox textBox3;
+        private Label label14;
+        private TextBox YearGradINPUT;
+        private TextBox YearAddINPUT;
         private Label label30;
-        private TextBox textBox2;
         private Label label29;
+        private TextBox SecondaryAddINPUT;
     }
 }
