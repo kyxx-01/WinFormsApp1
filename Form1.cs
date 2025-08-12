@@ -14,7 +14,7 @@ namespace WinFormsApp1
             button1.ForeColor = Color.White;                    // White text
             button1.FlatStyle = FlatStyle.Flat;                 // Flat look
             button1.FlatAppearance.BorderSize = 0;              // No border
-            button1.Font = new Font("Segoe UI", 12, FontStyle.Bold); // Font style
+            button1.Font = new Font("Times New Roman", 12, FontStyle.Bold); // Font style
             button1.Cursor = Cursors.Hand;                      // Hand cursor
 
             // Rounded corners
@@ -25,55 +25,40 @@ namespace WinFormsApp1
             button1.MouseEnter += (s, eArgs) => button1.BackColor = Color.Red;          // Brighter red
             button1.MouseLeave += (s, eArgs) => button1.BackColor = Color.Firebrick;    // Original red
 
-            button4.BackColor = Color.MediumSlateBlue;
-            button4.ForeColor = Color.White;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-            button4.Cursor = Cursors.Hand;
+            // New color palette
+            Color normalColor = Color.SlateGray;
+            Color hoverColor = Color.RoyalBlue;
+            Color pressedColor = Color.LightSteelBlue; // Optional click effect
 
-            button4.Region = System.Drawing.Region.FromHrgn(
-                CreateRoundRectRgn(0, 0, button4.Width, button4.Height, 20, 20));
+            // Helper method to style buttons
+            void StyleBlueButton(Button btn)
+            {
+                btn.BackColor = normalColor;
+                btn.ForeColor = Color.White;
+                btn.FlatStyle = FlatStyle.Flat;
+                btn.FlatAppearance.BorderSize = 0;
+                btn.Font = new Font("Times New Roman", 12, FontStyle.Bold);
+                btn.Cursor = Cursors.Hand;
+                btn.Region = System.Drawing.Region.FromHrgn(
+                    CreateRoundRectRgn(0, 0, btn.Width, btn.Height, 20, 20));
 
-            button4.MouseEnter += (s, eArgs) => button4.BackColor = Color.DodgerBlue;
-            button4.MouseLeave += (s, eArgs) => button4.BackColor = Color.MediumSlateBlue;
+                // Hover effect
+                btn.MouseEnter += (s, eArgs) => btn.BackColor = hoverColor;
+                btn.MouseLeave += (s, eArgs) => btn.BackColor = normalColor;
 
-            // Style for button3
-            button3.BackColor = Color.MediumSlateBlue;
-            button3.ForeColor = Color.White;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-            button3.Cursor = Cursors.Hand;
-            button3.Region = System.Drawing.Region.FromHrgn(
-                CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
-            button3.MouseEnter += (s, eArgs) => button3.BackColor = Color.DodgerBlue;
-            button3.MouseLeave += (s, eArgs) => button3.BackColor = Color.MediumSlateBlue;
+                // Pressed effect
+                btn.MouseDown += (s, eArgs) => btn.BackColor = pressedColor;
+                btn.MouseUp += (s, eArgs) => btn.BackColor = hoverColor;
+            }
 
-            // Style for button5
-            button5.BackColor = Color.MediumSlateBlue;
-            button5.ForeColor = Color.White;
-            button5.FlatStyle = FlatStyle.Flat;
-            button5.FlatAppearance.BorderSize = 0;
-            button5.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-            button5.Cursor = Cursors.Hand;
-            button5.Region = System.Drawing.Region.FromHrgn(
-                CreateRoundRectRgn(0, 0, button5.Width, button5.Height, 20, 20));
-            button5.MouseEnter += (s, eArgs) => button5.BackColor = Color.DodgerBlue;
-            button5.MouseLeave += (s, eArgs) => button5.BackColor = Color.MediumSlateBlue;
+            // Apply styles to buttons
+            StyleBlueButton(button2);
+            StyleBlueButton(button3);
+            StyleBlueButton(button4);
+            StyleBlueButton(button5);
+            StyleBlueButton(button6);
 
-            // Style for button6
-            button6.BackColor = Color.MediumSlateBlue;
-            button6.ForeColor = Color.White;
-            button6.FlatStyle = FlatStyle.Flat;
-            button6.FlatAppearance.BorderSize = 0;
-            button6.Font = new Font("Segoe UI", 12, FontStyle.Bold);
-            button6.Cursor = Cursors.Hand;
-            button6.Region = System.Drawing.Region.FromHrgn(
-                CreateRoundRectRgn(0, 0, button6.Width, button6.Height, 20, 20));
-            button6.MouseEnter += (s, eArgs) => button6.BackColor = Color.DodgerBlue;
-            button6.MouseLeave += (s, eArgs) => button6.BackColor = Color.MediumSlateBlue;
-
+         
             // Panel border and shadow simulation
             panel1.BackColor = Color.White; // Keep it white if that's what you want
 
@@ -90,10 +75,7 @@ namespace WinFormsApp1
 
         }
 
-        private void MENU_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -142,6 +124,13 @@ namespace WinFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Calculator Calculator = new Calculator();
+            Calculator.Show();
+            this.Hide();
         }
     }
 }

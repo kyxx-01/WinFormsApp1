@@ -195,6 +195,7 @@
             fullnametb0.ReadOnly = true;
             fullnametb0.Size = new Size(440, 27);
             fullnametb0.TabIndex = 58;
+            fullnametb0.TextChanged += fullnametb0_TextChanged;
             // 
             // label15
             // 

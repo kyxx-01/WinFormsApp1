@@ -610,7 +610,7 @@
             button3.Name = "button3";
             button3.Size = new Size(112, 29);
             button3.TabIndex = 66;
-            button3.Text = "PRINT";
+            button3.Text = "GENERATE";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
