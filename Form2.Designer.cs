@@ -30,19 +30,94 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             button1 = new Button();
+            label5 = new Label();
+            panel1 = new Panel();
+            label1 = new Label();
+            label4 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.System;
             button1.Font = new Font("Times New Roman", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(300, 309);
+            button1.Location = new Point(644, 560);
             button1.Name = "button1";
             button1.Size = new Size(510, 118);
             button1.TabIndex = 0;
             button1.Text = "START";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Times New Roman", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(29, 56);
+            label5.Name = "label5";
+            label5.Size = new Size(320, 68);
+            label5.TabIndex = 5;
+            label5.Text = "UCC | 2025";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.LightSkyBlue;
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label3);
+            panel1.Location = new Point(644, 345);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(510, 209);
+            panel1.TabIndex = 6;
+            panel1.Paint += panel1_Paint;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold);
+            label1.Location = new Point(22, 21);
+            label1.Name = "label1";
+            label1.Size = new Size(474, 32);
+            label1.TabIndex = 5;
+            label1.Text = "TAMBA, JOHN RICHTER CLYDE D";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold);
+            label4.Location = new Point(22, 153);
+            label4.Name = "label4";
+            label4.Size = new Size(362, 32);
+            label4.TabIndex = 8;
+            label4.Text = "ALARCON, MARY GRACE";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold);
+            label2.Location = new Point(22, 65);
+            label2.Name = "label2";
+            label2.Size = new Size(362, 32);
+            label2.TabIndex = 6;
+            label2.Text = "ESTACIO, REXYL KYLE A";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold);
+            label3.Location = new Point(22, 109);
+            label3.Name = "label3";
+            label3.Size = new Size(436, 32);
+            label3.TabIndex = 7;
+            label3.Text = "SEVILLANO, MARIA KRISTINA ";
             // 
             // Form2
             // 
@@ -52,15 +127,26 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1169, 716);
+            Controls.Add(panel1);
+            Controls.Add(label5);
             Controls.Add(button1);
             Name = "Form2";
-            Text = "Form2";
+            Text = "ALARCON, MARY GRACE";
             Load += Form2_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private Button button1;
+        private Label label5;
+        private Panel panel1;
+        private Label label1;
+        private Label label4;
+        private Label label2;
+        private Label label3;
     }
 }

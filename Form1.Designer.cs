@@ -16,8 +16,8 @@
             if (disposing && (components != null))
             {
                 components.Dispose();
+                base.Dispose(disposing);
             }
-            base.Dispose(disposing);
         }
 
         #region Windows Form Designer generated code
@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             panel1 = new Panel();
+            button2 = new Button();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
@@ -55,6 +56,7 @@
             panel1.BackColor = Color.FromArgb(192, 255, 255);
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
@@ -66,11 +68,23 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ControlDark;
+            button2.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(427, 495);
+            button2.Name = "button2";
+            button2.Size = new Size(168, 90);
+            button2.TabIndex = 5;
+            button2.Text = "Calculator";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // button6
             // 
             button6.BackColor = SystemColors.ControlDark;
             button6.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(615, 365);
+            button6.Location = new Point(557, 367);
             button6.Name = "button6";
             button6.Size = new Size(311, 104);
             button6.TabIndex = 4;
@@ -82,7 +96,7 @@
             // 
             button5.BackColor = SystemColors.ControlDark;
             button5.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(143, 365);
+            button5.Location = new Point(144, 367);
             button5.Name = "button5";
             button5.Size = new Size(311, 104);
             button5.TabIndex = 3;
@@ -94,7 +108,7 @@
             // 
             button4.BackColor = SystemColors.ControlDark;
             button4.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.Location = new Point(615, 168);
+            button4.Location = new Point(557, 153);
             button4.Name = "button4";
             button4.Size = new Size(311, 104);
             button4.TabIndex = 2;
@@ -106,7 +120,7 @@
             // 
             button3.BackColor = SystemColors.ControlDark;
             button3.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(143, 168);
+            button3.Location = new Point(144, 153);
             button3.Name = "button3";
             button3.Size = new Size(311, 104);
             button3.TabIndex = 1;
@@ -123,7 +137,6 @@
             MENU.Size = new Size(274, 90);
             MENU.TabIndex = 0;
             MENU.Text = "MENU";
-            MENU.Click += MENU_Click;
             // 
             // Form1
             // 
@@ -151,5 +164,6 @@
         private Button button4;
         private Button button6;
         private Button button5;
+        private Button button2;
     }
 }

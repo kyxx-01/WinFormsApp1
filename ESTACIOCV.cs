@@ -53,5 +53,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void fullnametb0_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

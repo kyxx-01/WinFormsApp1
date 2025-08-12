@@ -13,11 +13,13 @@ namespace WinFormsApp1
     public partial class TAMBA : Form
     {
         private int scrollOffset = 0;
-        
+
 
         public TAMBA()
         {
             InitializeComponent();
+
+
 
         }
 
@@ -127,10 +129,41 @@ namespace WinFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // 1. Check if an image is uploaded
+            if (pictureBox1.Image == null)
+            {
+                MessageBox.Show("Please upload an image before proceeding.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 2. Required field checks
+            if (string.IsNullOrWhiteSpace(CNAME.Text) ||
+                string.IsNullOrWhiteSpace(CNUM.Text) ||
+                string.IsNullOrWhiteSpace(CEMAIL.Text) ||
+                string.IsNullOrWhiteSpace(CADDRESS.Text))
+            {
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 3. Email format validation
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CEMAIL.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Please enter a valid email address.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 4. Contact number validation (Philippines format example: starts with 09 and has 11 digits)
+            if (!System.Text.RegularExpressions.Regex.IsMatch(CNUM.Text, @"^09\d{9}$"))
+            {
+                MessageBox.Show("Please enter a valid contact number (e.g., 09123456789).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // ✅ If all validations pass, proceed
             this.Hide();
             TAMBACV tAMBACV = new TAMBACV();
 
-            // Pass values to the SAME instance you're about to show
             tAMBACV.pictureBox10.Image = pictureBox1.Image;
             tAMBACV.CNAME0.Text = CNAME.Text;
             tAMBACV.CNUM0.Text = CNUM.Text;
@@ -161,9 +194,9 @@ namespace WinFormsApp1
             tAMBACV.Show();
         }
 
+        private void CADDRESS_TextChanged(object sender, EventArgs e)
+        {
 
-
-
-
+        }
     }
 }

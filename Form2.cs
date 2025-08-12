@@ -29,7 +29,7 @@ namespace WinFormsApp1
             button1.ForeColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
             button1.FlatAppearance.BorderSize = 0;
-            button1.Font = new Font("Segoe UI", 48, FontStyle.Bold);
+            button1.Font = new Font("Times New Roman", 48, FontStyle.Bold);
             button1.Cursor = Cursors.Hand;
 
             // Rounded corners
@@ -69,5 +69,17 @@ namespace WinFormsApp1
     int nWidthEllipse, int nHeightEllipse
 );
 
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            // Optional: You can add custom painting logic here if needed
+            // For example, you can draw shapes or text on the panel
+            // e.Graphics.DrawString("Custom Text", this.Font, Brushes.Black, new PointF(10, 10));              int radius = 25; // Corner radius
+                    
+        }
     }
 }

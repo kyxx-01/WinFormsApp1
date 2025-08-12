@@ -479,6 +479,7 @@
             CADDRESS.Size = new Size(450, 35);
             CADDRESS.TabIndex = 44;
             CADDRESS.Text = "";
+            CADDRESS.TextChanged += CADDRESS_TextChanged;
             // 
             // CNAME
             // 
@@ -822,9 +823,9 @@
             label5.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             label5.Location = new Point(237, 151);
             label5.Name = "label5";
-            label5.Size = new Size(68, 17);
+            label5.Size = new Size(76, 17);
             label5.TabIndex = 8;
-            label5.Text = "Address:";
+            label5.Text = "*Address:";
             // 
             // label4
             // 
@@ -832,9 +833,9 @@
             label4.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             label4.Location = new Point(237, 239);
             label4.Name = "label4";
-            label4.Size = new Size(121, 17);
+            label4.Size = new Size(129, 17);
             label4.TabIndex = 7;
-            label4.Text = "Contact Number:";
+            label4.Text = "*Contact Number:";
             // 
             // label3
             // 
@@ -842,9 +843,9 @@
             label3.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             label3.Location = new Point(237, 192);
             label3.Name = "label3";
-            label3.Size = new Size(108, 17);
+            label3.Size = new Size(116, 17);
             label3.TabIndex = 6;
-            label3.Text = "Email Address:";
+            label3.Text = "*Email Address:";
             // 
             // label2
             // 
@@ -852,9 +853,9 @@
             label2.Font = new Font("Times New Roman", 9F, FontStyle.Bold);
             label2.Location = new Point(242, 100);
             label2.Name = "label2";
-            label2.Size = new Size(51, 17);
+            label2.Size = new Size(59, 17);
             label2.TabIndex = 5;
-            label2.Text = "Name:";
+            label2.Text = "*Name:";
             // 
             // panel4
             // 

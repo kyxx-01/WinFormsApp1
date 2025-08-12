@@ -14,7 +14,7 @@ namespace WinFormsApp1
             button1.ForeColor = Color.White;                    // White text
             button1.FlatStyle = FlatStyle.Flat;                 // Flat look
             button1.FlatAppearance.BorderSize = 0;              // No border
-            button1.Font = new Font("Segoe UI", 12, FontStyle.Bold); // Font style
+            button1.Font = new Font("Times New Roman", 12, FontStyle.Bold); // Font style
             button1.Cursor = Cursors.Hand;                      // Hand cursor
 
             // Rounded corners
@@ -29,7 +29,7 @@ namespace WinFormsApp1
             button4.ForeColor = Color.White;
             button4.FlatStyle = FlatStyle.Flat;
             button4.FlatAppearance.BorderSize = 0;
-            button4.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            button4.Font = new Font("Times New Roman", 12, FontStyle.Bold);
             button4.Cursor = Cursors.Hand;
 
             button4.Region = System.Drawing.Region.FromHrgn(
@@ -43,7 +43,7 @@ namespace WinFormsApp1
             button3.ForeColor = Color.White;
             button3.FlatStyle = FlatStyle.Flat;
             button3.FlatAppearance.BorderSize = 0;
-            button3.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            button3.Font = new Font("Times New Roman", 12, FontStyle.Bold);
             button3.Cursor = Cursors.Hand;
             button3.Region = System.Drawing.Region.FromHrgn(
                 CreateRoundRectRgn(0, 0, button3.Width, button3.Height, 20, 20));
@@ -55,7 +55,7 @@ namespace WinFormsApp1
             button5.ForeColor = Color.White;
             button5.FlatStyle = FlatStyle.Flat;
             button5.FlatAppearance.BorderSize = 0;
-            button5.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            button5.Font = new Font("Times New Roman", 12, FontStyle.Bold);
             button5.Cursor = Cursors.Hand;
             button5.Region = System.Drawing.Region.FromHrgn(
                 CreateRoundRectRgn(0, 0, button5.Width, button5.Height, 20, 20));
@@ -67,7 +67,7 @@ namespace WinFormsApp1
             button6.ForeColor = Color.White;
             button6.FlatStyle = FlatStyle.Flat;
             button6.FlatAppearance.BorderSize = 0;
-            button6.Font = new Font("Segoe UI", 12, FontStyle.Bold);
+            button6.Font = new Font("Times New Roman", 12, FontStyle.Bold);
             button6.Cursor = Cursors.Hand;
             button6.Region = System.Drawing.Region.FromHrgn(
                 CreateRoundRectRgn(0, 0, button6.Width, button6.Height, 20, 20));
@@ -90,10 +90,7 @@ namespace WinFormsApp1
 
         }
 
-        private void MENU_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -142,6 +139,13 @@ namespace WinFormsApp1
         private void button6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CalculatorForm CalculatorForm = new CalculatorForm();
+            CalculatorForm.Show();
+            this.Hide();
         }
     }
 }
