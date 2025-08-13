@@ -123,14 +123,17 @@ namespace WinFormsApp1
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            ALARCON aLARCON = new ALARCON();    
+            aLARCON.Show();
+            this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Calculator Calculator = new Calculator();
-            Calculator.Show();
+            calcu calcu = new calcu();
+            calcu.Show();
             this.Hide();
         }
     }
 }
+    
