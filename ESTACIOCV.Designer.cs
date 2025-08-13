@@ -102,6 +102,7 @@
             pb0.Location = new Point(59, 13);
             pb0.Name = "pb0";
             pb0.Size = new Size(169, 167);
+            pb0.SizeMode = PictureBoxSizeMode.StretchImage;
             pb0.TabIndex = 68;
             pb0.TabStop = false;
             // 

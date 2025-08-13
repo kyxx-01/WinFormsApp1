@@ -483,10 +483,10 @@
             // tabPage3
             // 
             tabPage3.Controls.Add(splitContainer3);
-            tabPage3.Location = new Point(4, 29);
+            tabPage3.Location = new Point(4, 28);
             tabPage3.Name = "tabPage3";
             tabPage3.Padding = new Padding(3);
-            tabPage3.Size = new Size(677, 654);
+            tabPage3.Size = new Size(677, 655);
             tabPage3.TabIndex = 2;
             tabPage3.Text = "Other ";
             tabPage3.UseVisualStyleBackColor = true;
@@ -540,7 +540,7 @@
             splitContainer3.Panel2.Controls.Add(panel2);
             splitContainer3.Panel2.Controls.Add(panel3);
             splitContainer3.Panel2.Paint += splitContainer3_Panel2_Paint;
-            splitContainer3.Size = new Size(671, 648);
+            splitContainer3.Size = new Size(671, 649);
             splitContainer3.SplitterDistance = 223;
             splitContainer3.TabIndex = 0;
             // 

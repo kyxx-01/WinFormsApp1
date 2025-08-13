@@ -79,7 +79,8 @@ namespace WinFormsApp1
             // Optional: You can add custom painting logic here if needed
             // For example, you can draw shapes or text on the panel
             // e.Graphics.DrawString("Custom Text", this.Font, Brushes.Black, new PointF(10, 10));              int radius = 25; // Corner radius
-                    
+
         }
+
     }
 }

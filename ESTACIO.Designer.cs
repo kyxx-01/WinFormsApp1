@@ -597,7 +597,7 @@
             panel4.Controls.Add(tertiaryyeargraudated);
             panel4.Location = new Point(0, 0);
             panel4.Name = "panel4";
-            panel4.Size = new Size(1169, 2000);
+            panel4.Size = new Size(1169, 1102);
             panel4.TabIndex = 58;
             panel4.Paint += panel4_Paint;
             // 
