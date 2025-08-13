@@ -359,6 +359,7 @@
             primarytb0.ReadOnly = true;
             primarytb0.Size = new Size(514, 27);
             primarytb0.TabIndex = 70;
+            primarytb0.TextChanged += primarytb0_TextChanged;
             // 
             // label7
             // 
@@ -402,6 +403,7 @@
             compname20.Location = new Point(185, 557);
             compname20.Name = "compname20";
             compname20.ReadOnly = true;
+            compname20.ShortcutsEnabled = false;
             compname20.Size = new Size(440, 27);
             compname20.TabIndex = 91;
             // 
@@ -697,7 +699,7 @@
             button2.BackColor = Color.SlateGray;
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(1035, 1023);
+            button2.Location = new Point(1027, 963);
             button2.Name = "button2";
             button2.Size = new Size(112, 29);
             button2.TabIndex = 125;
@@ -821,7 +823,6 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private Button button2;
         public TextBox adresstb0;
         public TextBox emailtb0;
         public TextBox contacttb0;
@@ -852,5 +853,6 @@
         public RichTextBox skill20;
         public RichTextBox skill10;
         public PictureBox pb0;
+        private Button button2;
     }
 }

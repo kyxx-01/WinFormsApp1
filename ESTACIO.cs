@@ -4,10 +4,13 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WinFormsApp1
 {
@@ -165,30 +168,62 @@ namespace WinFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
+            // 1. Check if an image is uploaded
+            if (pb.Image == null)
+            {
+                MessageBox.Show("Please upload an image before proceeding.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 2. Required field checks
+            if (string.IsNullOrWhiteSpace(fullnametb.Text) ||
+                string.IsNullOrWhiteSpace(contacttb.Text) ||
+                string.IsNullOrWhiteSpace(emailtb.Text) ||
+                string.IsNullOrWhiteSpace(adresstb.Text))
+            {
+                MessageBox.Show("Please fill in all required fields.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 3. Email format validation
+            if (!System.Text.RegularExpressions.Regex.IsMatch(emailtb.Text, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+            {
+                MessageBox.Show("Please enter a valid email address.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // 4. Contact number validation (Philippines format example: starts with 09 and has 11 digits)
+            if (!System.Text.RegularExpressions.Regex.IsMatch(contacttb.Text, @"^09\d{9}$"))
+            {
+                MessageBox.Show("Please enter a valid contact number (e.g., 09123456789).", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // ✅ If all validations pass, proceed
             this.Hide();
-            ESTACIOCV estacioCV = new ESTACIOCV();
+            ESTACIOCV eSTACIO = new ESTACIOCV();
+         
+            eSTACIO.fullnametb0.Text = fullnametb.Text;
+            eSTACIO.adresstb0.Text = adresstb.Text;
+            eSTACIO.contacttb0.Text = contacttb.Text;
+            eSTACIO.emailtb0.Text = emailtb.Text;
+            eSTACIO.pb0.Image = pb.Image;
+            eSTACIO.compname10.Text = compname1.Text;
+            eSTACIO.compname20.Text = comp2.Text;
+                eSTACIO.comp30.Text = comp3.Text;
+            eSTACIO.pos10.Text = pos1.Text;
+            eSTACIO.pos20.Text = pos2.Text;
+            eSTACIO.pos30.Text = pos3.Text;
+            eSTACIO.pyearentered0.Text = pyearentered.Text;
+            eSTACIO.sentered0.Text = sentered.Text;
+            eSTACIO.tertiaryyearentered0.Text = tertiaryyearentered.Text;
+            eSTACIO.skill10.Text = richTextBox1.Text;
+            eSTACIO.skill20.Text = richTextBox2.Text;
+            eSTACIO.skill30.Text = richTextBox3.Text;
 
-            estacioCV.fullnametb0.Text = fullnametb.Text;
-            estacioCV.adresstb0.Text = adresstb.Text;
-            estacioCV.contacttb0.Text = contacttb.Text;
-            estacioCV.emailtb0.Text = emailtb.Text;
-            estacioCV.pb0.Image = pb.Image;
-            estacioCV.compname10.Text = compname1.Text;
-            estacioCV.compname20.Text = comp2.Text;
-            estacioCV.comp30.Text = comp3.Text;
-            estacioCV.pos10.Text = pos1.Text;
-            estacioCV.pos20.Text = pos2.Text;
-            estacioCV.pos30.Text = pos3.Text;
-            estacioCV.pyearentered0.Text = pyearentered.Text;
-            estacioCV.sentered0.Text = sentered.Text;
-            estacioCV.tertiaryyearentered0.Text = tertiaryyearentered.Text;
-            estacioCV.skill10.Text = richTextBox1.Text;
-            estacioCV.skill20.Text = richTextBox2.Text;
-            estacioCV.skill30.Text = richTextBox3.Text;
 
 
-
-            Show (estacioCV);
+            eSTACIO.Show();
 
 
         }

@@ -34,6 +34,7 @@ namespace WinFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             ESTACIO eSTACIO = new ESTACIO();
             eSTACIO.Show();
@@ -49,12 +50,12 @@ namespace WinFormsApp1
 
         }
 
-        private void yearentered1_TextChanged(object sender, EventArgs e)
+        private void fullnametb0_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void fullnametb0_TextChanged(object sender, EventArgs e)
+        private void primarytb0_TextChanged(object sender, EventArgs e)
         {
 
         }

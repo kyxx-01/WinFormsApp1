@@ -98,6 +98,11 @@
             label19 = new Label();
             panel4 = new Panel();
             label18 = new Label();
+            SecondaryAddTB = new TextBox();
+            label29 = new Label();
+            label30 = new Label();
+            YearEnterAddTB = new TextBox();
+            YearGradAddTB = new TextBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -164,6 +169,11 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.AliceBlue;
+            splitContainer1.Panel2.Controls.Add(YearGradAddTB);
+            splitContainer1.Panel2.Controls.Add(YearEnterAddTB);
+            splitContainer1.Panel2.Controls.Add(label30);
+            splitContainer1.Panel2.Controls.Add(label29);
+            splitContainer1.Panel2.Controls.Add(SecondaryAddTB);
             splitContainer1.Panel2.Controls.Add(button1);
             splitContainer1.Panel2.Controls.Add(tertiaryTB);
             splitContainer1.Panel2.Controls.Add(secondaryTB);
@@ -202,7 +212,7 @@
             // 
             // nameTB
             // 
-            nameTB.Location = new Point(19, 430);
+            nameTB.Location = new Point(19, 417);
             nameTB.Multiline = true;
             nameTB.Name = "nameTB";
             nameTB.ReadOnly = true;
@@ -229,29 +239,30 @@
             // 
             // contactTB
             // 
-            contactTB.Location = new Point(19, 907);
+            contactTB.Location = new Point(19, 926);
             contactTB.Multiline = true;
             contactTB.Name = "contactTB";
             contactTB.ReadOnly = true;
-            contactTB.Size = new Size(309, 27);
+            contactTB.Size = new Size(309, 36);
             contactTB.TabIndex = 17;
             // 
             // emailTB
             // 
-            emailTB.Location = new Point(19, 803);
+            emailTB.Location = new Point(19, 815);
             emailTB.Multiline = true;
             emailTB.Name = "emailTB";
             emailTB.ReadOnly = true;
-            emailTB.Size = new Size(309, 27);
+            emailTB.Size = new Size(309, 39);
             emailTB.TabIndex = 16;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(19, 868);
+            label5.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(19, 880);
             label5.Name = "label5";
-            label5.Size = new Size(165, 26);
+            label5.Size = new Size(182, 25);
             label5.TabIndex = 5;
             label5.Text = "Contact Number";
             label5.Click += label5_Click;
@@ -259,30 +270,33 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(19, 761);
+            label4.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(19, 770);
             label4.Name = "label4";
-            label4.Size = new Size(146, 26);
+            label4.Size = new Size(154, 25);
             label4.TabIndex = 4;
             label4.Text = "Email Address";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
             label3.Location = new Point(19, 623);
             label3.Name = "label3";
-            label3.Size = new Size(88, 26);
+            label3.Size = new Size(93, 25);
             label3.TabIndex = 3;
             label3.Text = "Address";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(19, 496);
+            label2.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(19, 479);
             label2.Name = "label2";
-            label2.Size = new Size(172, 26);
+            label2.Size = new Size(181, 25);
             label2.TabIndex = 2;
             label2.Text = "Profile Summary";
             label2.Click += label2_Click;
@@ -290,105 +304,112 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(19, 401);
+            label1.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(19, 364);
             label1.Name = "label1";
-            label1.Size = new Size(66, 26);
+            label1.Size = new Size(71, 25);
             label1.TabIndex = 1;
             label1.Text = "Name";
             label1.Click += label1_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(654, 941);
+            button1.BackColor = Color.DarkSlateGray;
+            button1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(616, 951);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(123, 29);
             button1.TabIndex = 19;
             button1.Text = "BACK";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // tertiaryTB
             // 
-            tertiaryTB.Location = new Point(242, 719);
+            tertiaryTB.Location = new Point(138, 760);
             tertiaryTB.Name = "tertiaryTB";
             tertiaryTB.ReadOnly = true;
-            tertiaryTB.Size = new Size(255, 27);
+            tertiaryTB.Size = new Size(515, 27);
             tertiaryTB.TabIndex = 18;
+            tertiaryTB.TextChanged += tertiaryTB_TextChanged;
             // 
             // secondaryTB
             // 
-            secondaryTB.Location = new Point(242, 425);
+            secondaryTB.Location = new Point(138, 390);
             secondaryTB.Name = "secondaryTB";
             secondaryTB.ReadOnly = true;
-            secondaryTB.Size = new Size(255, 27);
+            secondaryTB.Size = new Size(515, 27);
             secondaryTB.TabIndex = 17;
             // 
             // primaryTB
             // 
-            primaryTB.Location = new Point(242, 155);
+            primaryTB.Location = new Point(138, 165);
             primaryTB.Name = "primaryTB";
             primaryTB.ReadOnly = true;
-            primaryTB.Size = new Size(255, 27);
+            primaryTB.Size = new Size(515, 27);
             primaryTB.TabIndex = 16;
             // 
             // tyearGraduatedTB
             // 
-            tyearGraduatedTB.Location = new Point(242, 896);
+            tyearGraduatedTB.Location = new Point(227, 894);
             tyearGraduatedTB.Name = "tyearGraduatedTB";
             tyearGraduatedTB.ReadOnly = true;
-            tyearGraduatedTB.Size = new Size(125, 27);
+            tyearGraduatedTB.Size = new Size(149, 27);
             tyearGraduatedTB.TabIndex = 15;
             // 
             // tyearTB
             // 
-            tyearTB.Location = new Point(242, 813);
+            tyearTB.Location = new Point(227, 815);
             tyearTB.Name = "tyearTB";
             tyearTB.ReadOnly = true;
-            tyearTB.Size = new Size(125, 27);
+            tyearTB.Size = new Size(149, 27);
             tyearTB.TabIndex = 14;
             // 
             // syearGraduatedTB
             // 
-            syearGraduatedTB.Location = new Point(242, 588);
+            syearGraduatedTB.Location = new Point(227, 512);
             syearGraduatedTB.Name = "syearGraduatedTB";
             syearGraduatedTB.ReadOnly = true;
-            syearGraduatedTB.Size = new Size(125, 27);
+            syearGraduatedTB.Size = new Size(149, 27);
             syearGraduatedTB.TabIndex = 13;
             // 
             // syearTB
             // 
-            syearTB.Location = new Point(242, 508);
+            syearTB.Location = new Point(227, 451);
             syearTB.Name = "syearTB";
             syearTB.ReadOnly = true;
-            syearTB.Size = new Size(125, 27);
+            syearTB.Size = new Size(149, 27);
             syearTB.TabIndex = 12;
             // 
             // pyearGraduatedTB
             // 
-            pyearGraduatedTB.Location = new Point(242, 305);
+            pyearGraduatedTB.Location = new Point(227, 267);
             pyearGraduatedTB.Name = "pyearGraduatedTB";
             pyearGraduatedTB.ReadOnly = true;
-            pyearGraduatedTB.Size = new Size(125, 27);
+            pyearGraduatedTB.Size = new Size(149, 27);
             pyearGraduatedTB.TabIndex = 11;
             // 
             // pyearTB
             // 
-            pyearTB.Location = new Point(242, 225);
+            pyearTB.Location = new Point(227, 212);
             pyearTB.Name = "pyearTB";
             pyearTB.ReadOnly = true;
-            pyearTB.Size = new Size(125, 27);
+            pyearTB.Size = new Size(149, 27);
             pyearTB.TabIndex = 10;
+            pyearTB.TextChanged += pyearTB_TextChanged;
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.Location = new Point(40, 897);
+            label15.Location = new Point(40, 895);
             label15.Name = "label15";
             label15.Size = new Size(156, 26);
             label15.TabIndex = 9;
             label15.Text = "Year Graduated";
+            label15.Click += label15_Click;
             // 
             // label14
             // 
@@ -415,7 +436,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label12.Location = new Point(34, 587);
+            label12.Location = new Point(36, 513);
             label12.Name = "label12";
             label12.Size = new Size(156, 26);
             label12.TabIndex = 6;
@@ -425,7 +446,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label11.Location = new Point(34, 509);
+            label11.Location = new Point(40, 452);
             label11.Name = "label11";
             label11.Size = new Size(137, 26);
             label11.TabIndex = 5;
@@ -436,17 +457,18 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(34, 427);
+            label10.Location = new Point(40, 344);
             label10.Name = "label10";
             label10.Size = new Size(118, 25);
             label10.TabIndex = 4;
             label10.Text = "Secondary";
+            label10.Click += label10_Click;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.Location = new Point(40, 304);
+            label9.Location = new Point(36, 266);
             label9.Name = "label9";
             label9.Size = new Size(156, 26);
             label9.TabIndex = 3;
@@ -456,7 +478,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label8.Location = new Point(40, 225);
+            label8.Location = new Point(40, 211);
             label8.Name = "label8";
             label8.Size = new Size(137, 26);
             label8.TabIndex = 2;
@@ -467,7 +489,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(34, 154);
+            label7.Location = new Point(40, 126);
             label7.Name = "label7";
             label7.Size = new Size(94, 25);
             label7.TabIndex = 1;
@@ -581,62 +603,62 @@
             language2TB.Multiline = true;
             language2TB.Name = "language2TB";
             language2TB.ReadOnly = true;
-            language2TB.Size = new Size(309, 27);
+            language2TB.Size = new Size(309, 34);
             language2TB.TabIndex = 23;
             // 
             // language1TB
             // 
-            language1TB.Location = new Point(26, 720);
+            language1TB.Location = new Point(26, 712);
             language1TB.Multiline = true;
             language1TB.Name = "language1TB";
             language1TB.ReadOnly = true;
-            language1TB.Size = new Size(309, 27);
+            language1TB.Size = new Size(309, 35);
             language1TB.TabIndex = 22;
             // 
             // skill5TB
             // 
-            skill5TB.Location = new Point(26, 395);
+            skill5TB.Location = new Point(26, 438);
             skill5TB.Multiline = true;
             skill5TB.Name = "skill5TB";
             skill5TB.ReadOnly = true;
-            skill5TB.Size = new Size(309, 27);
+            skill5TB.Size = new Size(309, 37);
             skill5TB.TabIndex = 21;
             // 
             // skill4TB
             // 
-            skill4TB.Location = new Point(26, 336);
+            skill4TB.Location = new Point(26, 361);
             skill4TB.Multiline = true;
             skill4TB.Name = "skill4TB";
             skill4TB.ReadOnly = true;
-            skill4TB.Size = new Size(309, 27);
+            skill4TB.Size = new Size(309, 36);
             skill4TB.TabIndex = 20;
             // 
             // skill3TB
             // 
-            skill3TB.Location = new Point(26, 276);
+            skill3TB.Location = new Point(26, 291);
             skill3TB.Multiline = true;
             skill3TB.Name = "skill3TB";
             skill3TB.ReadOnly = true;
-            skill3TB.Size = new Size(309, 27);
+            skill3TB.Size = new Size(309, 38);
             skill3TB.TabIndex = 19;
             // 
             // skill2TB
             // 
-            skill2TB.Location = new Point(26, 218);
+            skill2TB.Location = new Point(26, 226);
             skill2TB.Multiline = true;
             skill2TB.Name = "skill2TB";
             skill2TB.ReadOnly = true;
-            skill2TB.Size = new Size(309, 27);
+            skill2TB.Size = new Size(309, 38);
             skill2TB.TabIndex = 18;
             skill2TB.TextChanged += textBox13_TextChanged;
             // 
             // skill1TB
             // 
-            skill1TB.Location = new Point(26, 155);
+            skill1TB.Location = new Point(26, 160);
             skill1TB.Multiline = true;
             skill1TB.Name = "skill1TB";
             skill1TB.ReadOnly = true;
-            skill1TB.Size = new Size(309, 27);
+            skill1TB.Size = new Size(309, 35);
             skill1TB.TabIndex = 17;
             skill1TB.TextChanged += skill1TB_TextChanged;
             // 
@@ -662,12 +684,13 @@
             // 
             // yearEndTB
             // 
-            yearEndTB.Location = new Point(348, 262);
+            yearEndTB.Location = new Point(348, 263);
             yearEndTB.Multiline = true;
             yearEndTB.Name = "yearEndTB";
             yearEndTB.ReadOnly = true;
             yearEndTB.Size = new Size(71, 27);
             yearEndTB.TabIndex = 25;
+            yearEndTB.TextChanged += yearEndTB_TextChanged;
             // 
             // yearStartTB
             // 
@@ -680,47 +703,47 @@
             // 
             // companyNameTB
             // 
-            companyNameTB.Location = new Point(245, 156);
+            companyNameTB.Location = new Point(200, 153);
             companyNameTB.Multiline = true;
             companyNameTB.Name = "companyNameTB";
             companyNameTB.ReadOnly = true;
-            companyNameTB.Size = new Size(309, 27);
+            companyNameTB.Size = new Size(434, 42);
             companyNameTB.TabIndex = 23;
             // 
             // contact2TB
             // 
-            contact2TB.Location = new Point(223, 910);
+            contact2TB.Location = new Point(223, 907);
             contact2TB.Multiline = true;
             contact2TB.Name = "contact2TB";
             contact2TB.ReadOnly = true;
-            contact2TB.Size = new Size(309, 27);
+            contact2TB.Size = new Size(309, 34);
             contact2TB.TabIndex = 22;
             // 
             // occupation2TB
             // 
-            occupation2TB.Location = new Point(223, 850);
+            occupation2TB.Location = new Point(223, 827);
             occupation2TB.Multiline = true;
             occupation2TB.Name = "occupation2TB";
             occupation2TB.ReadOnly = true;
-            occupation2TB.Size = new Size(309, 27);
+            occupation2TB.Size = new Size(309, 34);
             occupation2TB.TabIndex = 21;
             // 
             // char2TB
             // 
-            char2TB.Location = new Point(223, 766);
+            char2TB.Location = new Point(200, 757);
             char2TB.Multiline = true;
             char2TB.Name = "char2TB";
             char2TB.ReadOnly = true;
-            char2TB.Size = new Size(309, 27);
+            char2TB.Size = new Size(434, 35);
             char2TB.TabIndex = 20;
             // 
             // contact1TB
             // 
-            contact1TB.Location = new Point(223, 614);
+            contact1TB.Location = new Point(223, 634);
             contact1TB.Multiline = true;
             contact1TB.Name = "contact1TB";
             contact1TB.ReadOnly = true;
-            contact1TB.Size = new Size(309, 27);
+            contact1TB.Size = new Size(309, 32);
             contact1TB.TabIndex = 19;
             // 
             // occupation1TB
@@ -729,23 +752,23 @@
             occupation1TB.Multiline = true;
             occupation1TB.Name = "occupation1TB";
             occupation1TB.ReadOnly = true;
-            occupation1TB.Size = new Size(309, 27);
+            occupation1TB.Size = new Size(309, 33);
             occupation1TB.TabIndex = 18;
             // 
             // char1TB
             // 
-            char1TB.Location = new Point(223, 471);
+            char1TB.Location = new Point(200, 480);
             char1TB.Multiline = true;
             char1TB.Name = "char1TB";
             char1TB.ReadOnly = true;
-            char1TB.Size = new Size(309, 27);
+            char1TB.Size = new Size(434, 38);
             char1TB.TabIndex = 17;
             // 
             // label28
             // 
             label28.AutoSize = true;
             label28.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label28.Location = new Point(38, 910);
+            label28.Location = new Point(38, 915);
             label28.Name = "label28";
             label28.Size = new Size(165, 26);
             label28.TabIndex = 11;
@@ -755,7 +778,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label27.Location = new Point(40, 850);
+            label27.Location = new Point(40, 838);
             label27.Name = "label27";
             label27.Size = new Size(119, 26);
             label27.TabIndex = 10;
@@ -775,7 +798,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label25.Location = new Point(28, 617);
+            label25.Location = new Point(28, 634);
             label25.Name = "label25";
             label25.Size = new Size(165, 26);
             label25.TabIndex = 8;
@@ -785,7 +808,7 @@
             // 
             label24.AutoSize = true;
             label24.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label24.Location = new Point(28, 562);
+            label24.Location = new Point(38, 569);
             label24.Name = "label24";
             label24.Size = new Size(119, 26);
             label24.TabIndex = 7;
@@ -796,7 +819,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label23.Location = new Point(28, 471);
+            label23.Location = new Point(40, 483);
             label23.Name = "label23";
             label23.Size = new Size(66, 26);
             label23.TabIndex = 6;
@@ -810,6 +833,7 @@
             label22.Size = new Size(20, 26);
             label22.TabIndex = 0;
             label22.Text = "-";
+            label22.Click += label22_Click;
             // 
             // label21
             // 
@@ -859,6 +883,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(772, 100);
             panel4.TabIndex = 2;
+            panel4.Paint += panel4_Paint;
             // 
             // label18
             // 
@@ -870,6 +895,50 @@
             label18.Size = new Size(221, 32);
             label18.TabIndex = 0;
             label18.Text = "Work Experience";
+            // 
+            // SecondaryAddTB
+            // 
+            SecondaryAddTB.Location = new Point(138, 571);
+            SecondaryAddTB.Name = "SecondaryAddTB";
+            SecondaryAddTB.ReadOnly = true;
+            SecondaryAddTB.Size = new Size(515, 27);
+            SecondaryAddTB.TabIndex = 20;
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label29.Location = new Point(40, 619);
+            label29.Name = "label29";
+            label29.Size = new Size(137, 26);
+            label29.TabIndex = 21;
+            label29.Text = "Year Entered ";
+            // 
+            // label30
+            // 
+            label30.AutoSize = true;
+            label30.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label30.Location = new Point(40, 666);
+            label30.Name = "label30";
+            label30.Size = new Size(156, 26);
+            label30.TabIndex = 22;
+            label30.Text = "Year Graduated";
+            // 
+            // YearEnterAddTB
+            // 
+            YearEnterAddTB.Location = new Point(227, 618);
+            YearEnterAddTB.Name = "YearEnterAddTB";
+            YearEnterAddTB.ReadOnly = true;
+            YearEnterAddTB.Size = new Size(149, 27);
+            YearEnterAddTB.TabIndex = 23;
+            // 
+            // YearGradAddTB
+            // 
+            YearGradAddTB.Location = new Point(227, 665);
+            YearGradAddTB.Name = "YearGradAddTB";
+            YearGradAddTB.ReadOnly = true;
+            YearGradAddTB.Size = new Size(149, 27);
+            YearGradAddTB.TabIndex = 24;
             // 
             // CV_PREVIEW
             // 
@@ -982,5 +1051,12 @@
         public TextBox primaryTB;
         public TextBox yearEndTB;
         private Button button1;
+        public TextBox textBox2;
+        public TextBox textBox1;
+        public Label label30;
+        public Label label29;
+        public TextBox SecondaryAddTB;
+        public TextBox YearGradAddTB;
+        public TextBox YearEnterAddTB;
     }
 }

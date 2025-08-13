@@ -845,7 +845,7 @@
 
         private Panel panel1;
         private Panel panel2;
-        private TextBox fullnametb;
+        private TextBox fullnametb; 
         private TextBox agetb;
         private TextBox contacttb;
         private TextBox emailtb;
