@@ -48,5 +48,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void subcodecomboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
