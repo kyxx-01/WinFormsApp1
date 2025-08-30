@@ -68,6 +68,7 @@
             printDocument1 = new System.Drawing.Printing.PrintDocument();
             printDialog1 = new PrintDialog();
             receiptbx = new TextBox();
+            button1 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)Olarge).BeginInit();
@@ -109,9 +110,10 @@
             // radioButton3
             // 
             radioButton3.AutoSize = true;
+            radioButton3.Font = new Font("Segoe UI", 12F);
             radioButton3.Location = new Point(77, 201);
             radioButton3.Name = "radioButton3";
-            radioButton3.Size = new Size(85, 19);
+            radioButton3.Size = new Size(106, 25);
             radioButton3.TabIndex = 6;
             radioButton3.TabStop = true;
             radioButton3.Text = "Apple Juice";
@@ -120,9 +122,10 @@
             // radioButton2
             // 
             radioButton2.AutoSize = true;
+            radioButton2.Font = new Font("Segoe UI", 12F);
             radioButton2.Location = new Point(77, 132);
             radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(81, 19);
+            radioButton2.Size = new Size(101, 25);
             radioButton2.TabIndex = 5;
             radioButton2.TabStop = true;
             radioButton2.Text = "Buko Juice";
@@ -131,9 +134,10 @@
             // radioButton1
             // 
             radioButton1.AutoSize = true;
+            radioButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             radioButton1.Location = new Point(77, 73);
             radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(93, 19);
+            radioButton1.Size = new Size(118, 25);
             radioButton1.TabIndex = 0;
             radioButton1.TabStop = true;
             radioButton1.Text = "Orange Juice";
@@ -444,12 +448,24 @@
             receiptbx.Size = new Size(549, 183);
             receiptbx.TabIndex = 14;
             // 
+            // button1
+            // 
+            button1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(937, 20);
+            button1.Name = "button1";
+            button1.Size = new Size(123, 41);
+            button1.TabIndex = 15;
+            button1.Text = "Return";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Ordering
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1111, 701);
+            Controls.Add(button1);
             Controls.Add(receiptbx);
             Controls.Add(printbtn);
             Controls.Add(warningLabel);
@@ -531,5 +547,6 @@
         private System.Drawing.Printing.PrintDocument printDocument1;
         private PrintDialog printDialog1;
         private TextBox receiptbx;
+        private Button button1;
     }
 }

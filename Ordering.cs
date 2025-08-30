@@ -12,6 +12,7 @@ namespace WinFormsApp1
 {
     public partial class Ordering : Form
     {
+
         private readonly Dictionary<string, decimal> itemPrices = new()
         {
             // Orange Juice
@@ -170,6 +171,13 @@ namespace WinFormsApp1
 
             // Show in receiptbx
             receiptbx.Text = receipt.ToString();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Show();
         }
     }
 }
