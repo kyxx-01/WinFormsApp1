@@ -32,12 +32,12 @@
             AdminPB = new PictureBox();
             label1 = new Label();
             passwordpanel = new Panel();
+            passwordTxt = new TextBox();
             passwordicopb = new PictureBox();
             registerbutton = new Button();
             loginbutton = new Button();
             loginicopb = new PictureBox();
             LoginPanel = new Panel();
-            passwordTxt = new TextBox();
             loginTxt = new TextBox();
             ((System.ComponentModel.ISupportInitialize)AdminPB).BeginInit();
             passwordpanel.SuspendLayout();
@@ -78,6 +78,16 @@
             passwordpanel.Name = "passwordpanel";
             passwordpanel.Size = new Size(323, 58);
             passwordpanel.TabIndex = 4;
+            // 
+            // passwordTxt
+            // 
+            passwordTxt.BorderStyle = BorderStyle.FixedSingle;
+            passwordTxt.ForeColor = Color.Black;
+            passwordTxt.Location = new Point(57, 17);
+            passwordTxt.Multiline = true;
+            passwordTxt.Name = "passwordTxt";
+            passwordTxt.Size = new Size(249, 28);
+            passwordTxt.TabIndex = 7;
             // 
             // passwordicopb
             // 
@@ -130,21 +140,16 @@
             LoginPanel.TabIndex = 1;
             LoginPanel.Paint += LoginPanel_Paint;
             // 
-            // passwordTxt
-            // 
-            passwordTxt.Location = new Point(57, 17);
-            passwordTxt.Multiline = true;
-            passwordTxt.Name = "passwordTxt";
-            passwordTxt.Size = new Size(249, 28);
-            passwordTxt.TabIndex = 7;
-            // 
             // loginTxt
             // 
-            loginTxt.Location = new Point(57, 15);
+            loginTxt.BorderStyle = BorderStyle.None;
+            loginTxt.ForeColor = Color.Black;
+            loginTxt.Location = new Point(57, 16);
             loginTxt.Multiline = true;
             loginTxt.Name = "loginTxt";
             loginTxt.Size = new Size(249, 28);
             loginTxt.TabIndex = 8;
+            loginTxt.TextChanged += loginTxt_TextChanged;
             // 
             // Login_Page
             // 

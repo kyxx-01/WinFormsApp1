@@ -42,6 +42,7 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Green;
             button1.FlatStyle = FlatStyle.System;
             button1.Font = new Font("Times New Roman", 72F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(18, 582);
@@ -49,12 +50,12 @@
             button1.Size = new Size(510, 118);
             button1.TabIndex = 0;
             button1.Text = "START";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Transparent;
+            panel1.BackColor = SystemColors.ActiveCaption;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
@@ -113,9 +114,9 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(883, 12);
+            pictureBox1.Location = new Point(945, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(261, 263);
+            pictureBox1.Size = new Size(224, 218);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
@@ -131,6 +132,7 @@
             Controls.Add(panel1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             Name = "Form2";
             Text = "ALARCON, MARY GRACE";
             Load += Form2_Load;

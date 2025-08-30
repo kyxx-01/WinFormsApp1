@@ -42,13 +42,14 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.LimeGreen;
             button1.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.Location = new Point(972, 12);
             button1.Name = "button1";
             button1.Size = new Size(185, 59);
             button1.TabIndex = 0;
             button1.Text = "RETURN";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // panel1
@@ -70,7 +71,7 @@
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.ControlDark;
+            button2.BackColor = SystemColors.ActiveCaption;
             button2.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.Location = new Point(427, 495);
             button2.Name = "button2";
@@ -82,7 +83,7 @@
             // 
             // button6
             // 
-            button6.BackColor = SystemColors.ControlDark;
+            button6.BackColor = Color.Gainsboro;
             button6.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button6.Location = new Point(557, 367);
             button6.Name = "button6";
@@ -94,7 +95,7 @@
             // 
             // button5
             // 
-            button5.BackColor = SystemColors.ControlDark;
+            button5.BackColor = Color.Gainsboro;
             button5.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.Location = new Point(144, 367);
             button5.Name = "button5";
@@ -106,7 +107,7 @@
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.ControlDark;
+            button4.BackColor = Color.Gainsboro;
             button4.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button4.Location = new Point(557, 208);
             button4.Name = "button4";
@@ -118,7 +119,7 @@
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.ControlDark;
+            button3.BackColor = Color.Gainsboro;
             button3.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.Location = new Point(144, 208);
             button3.Name = "button3";
@@ -131,8 +132,9 @@
             // MENU
             // 
             MENU.AutoSize = true;
-            MENU.BackColor = Color.SlateGray;
+            MENU.BackColor = Color.Transparent;
             MENU.Font = new Font("Times New Roman", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MENU.ForeColor = Color.White;
             MENU.Location = new Point(388, 29);
             MENU.Name = "MENU";
             MENU.Size = new Size(274, 90);
