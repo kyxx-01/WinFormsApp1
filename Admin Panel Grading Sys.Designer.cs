@@ -68,7 +68,7 @@
             splitContainer1.Panel2.BackColor = Color.White;
             splitContainer1.Panel2.BackgroundImageLayout = ImageLayout.Stretch;
             splitContainer1.Panel2.Controls.Add(tabControl1);
-            splitContainer1.Panel2.Paint += this.splitContainer1_Panel2_Paint;
+
             splitContainer1.Size = new Size(1273, 929);
             splitContainer1.SplitterDistance = 424;
             splitContainer1.TabIndex = 0;
