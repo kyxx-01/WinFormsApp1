@@ -43,6 +43,11 @@
             gradingicoPB = new PictureBox();
             payrollicoPB = new PictureBox();
             ordericoPB = new PictureBox();
+            cv = new Label();
+            calculator = new Label();
+            grading = new Label();
+            ordering = new Label();
+            Payroll = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)windowsPB).BeginInit();
             ((System.ComponentModel.ISupportInitialize)searchbarPB).BeginInit();
@@ -184,12 +189,13 @@
             cvicoPB.SizeMode = PictureBoxSizeMode.StretchImage;
             cvicoPB.TabIndex = 1;
             cvicoPB.TabStop = false;
+            cvicoPB.Click += cvicoPB_Click;
             // 
             // calcuicoPB
             // 
             calcuicoPB.BackColor = Color.Transparent;
             calcuicoPB.Image = (Image)resources.GetObject("calcuicoPB.Image");
-            calcuicoPB.Location = new Point(25, 186);
+            calcuicoPB.Location = new Point(25, 183);
             calcuicoPB.Margin = new Padding(4, 4, 4, 4);
             calcuicoPB.Name = "calcuicoPB";
             calcuicoPB.Size = new Size(78, 78);
@@ -201,7 +207,7 @@
             // 
             gradingicoPB.BackColor = Color.Transparent;
             gradingicoPB.Image = (Image)resources.GetObject("gradingicoPB.Image");
-            gradingicoPB.Location = new Point(25, 321);
+            gradingicoPB.Location = new Point(25, 316);
             gradingicoPB.Margin = new Padding(4);
             gradingicoPB.Name = "gradingicoPB";
             gradingicoPB.Size = new Size(78, 78);
@@ -213,7 +219,7 @@
             // 
             payrollicoPB.BackColor = Color.Transparent;
             payrollicoPB.Image = (Image)resources.GetObject("payrollicoPB.Image");
-            payrollicoPB.Location = new Point(25, 586);
+            payrollicoPB.Location = new Point(25, 568);
             payrollicoPB.Margin = new Padding(4);
             payrollicoPB.Name = "payrollicoPB";
             payrollicoPB.Size = new Size(78, 78);
@@ -225,13 +231,73 @@
             // 
             ordericoPB.BackColor = Color.Transparent;
             ordericoPB.Image = (Image)resources.GetObject("ordericoPB.Image");
-            ordericoPB.Location = new Point(25, 461);
+            ordericoPB.Location = new Point(25, 437);
             ordericoPB.Margin = new Padding(4);
             ordericoPB.Name = "ordericoPB";
             ordericoPB.Size = new Size(78, 78);
             ordericoPB.SizeMode = PictureBoxSizeMode.StretchImage;
             ordericoPB.TabIndex = 5;
             ordericoPB.TabStop = false;
+            // 
+            // cv
+            // 
+            cv.AutoSize = true;
+            cv.BackColor = Color.Transparent;
+            cv.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cv.ForeColor = Color.White;
+            cv.Location = new Point(12, 143);
+            cv.Name = "cv";
+            cv.Size = new Size(109, 18);
+            cv.TabIndex = 7;
+            cv.Text = "CurriculumVitae";
+            // 
+            // calculator
+            // 
+            calculator.AutoSize = true;
+            calculator.BackColor = Color.Transparent;
+            calculator.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            calculator.ForeColor = Color.White;
+            calculator.Location = new Point(27, 270);
+            calculator.Name = "calculator";
+            calculator.Size = new Size(70, 18);
+            calculator.TabIndex = 8;
+            calculator.Text = "Calculator";
+            // 
+            // grading
+            // 
+            grading.AutoSize = true;
+            grading.BackColor = Color.Transparent;
+            grading.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            grading.ForeColor = Color.White;
+            grading.Location = new Point(31, 399);
+            grading.Name = "grading";
+            grading.Size = new Size(59, 18);
+            grading.TabIndex = 9;
+            grading.Text = "Grading";
+            // 
+            // ordering
+            // 
+            ordering.AutoSize = true;
+            ordering.BackColor = Color.Transparent;
+            ordering.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            ordering.ForeColor = Color.White;
+            ordering.Location = new Point(33, 523);
+            ordering.Name = "ordering";
+            ordering.Size = new Size(64, 18);
+            ordering.TabIndex = 10;
+            ordering.Text = "Ordering";
+            // 
+            // Payroll
+            // 
+            Payroll.AutoSize = true;
+            Payroll.BackColor = Color.Transparent;
+            Payroll.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Payroll.ForeColor = Color.White;
+            Payroll.Location = new Point(31, 660);
+            Payroll.Name = "Payroll";
+            Payroll.Size = new Size(51, 18);
+            Payroll.TabIndex = 11;
+            Payroll.Text = "Payroll";
             // 
             // Main_Page
             // 
@@ -240,6 +306,11 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1782, 895);
+            Controls.Add(Payroll);
+            Controls.Add(ordering);
+            Controls.Add(grading);
+            Controls.Add(calculator);
+            Controls.Add(cv);
             Controls.Add(ordericoPB);
             Controls.Add(payrollicoPB);
             Controls.Add(gradingicoPB);
@@ -265,6 +336,7 @@
             ((System.ComponentModel.ISupportInitialize)payrollicoPB).EndInit();
             ((System.ComponentModel.ISupportInitialize)ordericoPB).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -283,5 +355,10 @@
         private PictureBox gradingicoPB;
         private PictureBox payrollicoPB;
         private PictureBox ordericoPB;
+        private Label cv;
+        private Label calculator;
+        private Label grading;
+        private Label ordering;
+        private Label Payroll;
     }
 }

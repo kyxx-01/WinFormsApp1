@@ -16,5 +16,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
         }
+
+        private void cvicoPB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
