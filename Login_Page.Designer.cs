@@ -49,7 +49,6 @@
             // AdminPB
             // 
             AdminPB.BackColor = Color.Transparent;
-            AdminPB.BackgroundImage = (Image)resources.GetObject("AdminPB.BackgroundImage");
             AdminPB.Image = (Image)resources.GetObject("AdminPB.Image");
             AdminPB.Location = new Point(136, 65);
             AdminPB.Name = "AdminPB";
@@ -71,7 +70,7 @@
             // 
             // passwordpanel
             // 
-            passwordpanel.BackColor = Color.White;
+            passwordpanel.BackColor = Color.Honeydew;
             passwordpanel.Controls.Add(passwordTxt);
             passwordpanel.Controls.Add(passwordicopb);
             passwordpanel.Location = new Point(67, 384);
@@ -81,13 +80,15 @@
             // 
             // passwordTxt
             // 
-            passwordTxt.BorderStyle = BorderStyle.FixedSingle;
+            passwordTxt.BackColor = Color.Honeydew;
+            passwordTxt.BorderStyle = BorderStyle.None;
             passwordTxt.ForeColor = Color.Black;
-            passwordTxt.Location = new Point(57, 17);
+            passwordTxt.Location = new Point(55, 16);
             passwordTxt.Multiline = true;
             passwordTxt.Name = "passwordTxt";
+            passwordTxt.PlaceholderText = "Password";
             passwordTxt.Size = new Size(249, 28);
-            passwordTxt.TabIndex = 7;
+            passwordTxt.TabIndex = 9;
             // 
             // passwordicopb
             // 
@@ -101,7 +102,7 @@
             // 
             // registerbutton
             // 
-            registerbutton.BackColor = SystemColors.ControlDark;
+            registerbutton.BackColor = Color.SeaGreen;
             registerbutton.Location = new Point(67, 485);
             registerbutton.Name = "registerbutton";
             registerbutton.Size = new Size(323, 39);
@@ -111,13 +112,14 @@
             // 
             // loginbutton
             // 
-            loginbutton.BackColor = Color.ForestGreen;
+            loginbutton.BackColor = Color.SeaGreen;
             loginbutton.Location = new Point(67, 543);
             loginbutton.Name = "loginbutton";
             loginbutton.Size = new Size(323, 39);
             loginbutton.TabIndex = 6;
             loginbutton.Text = "Login";
             loginbutton.UseVisualStyleBackColor = false;
+            loginbutton.Click += loginbutton_Click;
             // 
             // loginicopb
             // 
@@ -131,9 +133,10 @@
             // 
             // LoginPanel
             // 
-            LoginPanel.BackColor = Color.White;
+            LoginPanel.BackColor = Color.Honeydew;
             LoginPanel.Controls.Add(loginTxt);
             LoginPanel.Controls.Add(loginicopb);
+            LoginPanel.Cursor = Cursors.IBeam;
             LoginPanel.Location = new Point(67, 309);
             LoginPanel.Name = "LoginPanel";
             LoginPanel.Size = new Size(323, 58);
@@ -142,11 +145,13 @@
             // 
             // loginTxt
             // 
+            loginTxt.BackColor = Color.Honeydew;
             loginTxt.BorderStyle = BorderStyle.None;
             loginTxt.ForeColor = Color.Black;
             loginTxt.Location = new Point(57, 16);
             loginTxt.Multiline = true;
             loginTxt.Name = "loginTxt";
+            loginTxt.PlaceholderText = "Username";
             loginTxt.Size = new Size(249, 28);
             loginTxt.TabIndex = 8;
             loginTxt.TextChanged += loginTxt_TextChanged;
@@ -155,7 +160,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 27F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Ivory;
+            BackColor = Color.SeaGreen;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(489, 648);
@@ -194,9 +199,9 @@
         private PictureBox passwordicopb;
         private Button registerbutton;
         private Button loginbutton;
-        private TextBox passwordTxt;
         private PictureBox loginicopb;
         private Panel LoginPanel;
         private TextBox loginTxt;
+        private TextBox passwordTxt;
     }
 }

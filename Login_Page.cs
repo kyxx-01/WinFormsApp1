@@ -46,8 +46,8 @@ namespace WinFormsApp1
 
             // Set Text color to black
         }
-    
-      private void UsernameTxt_LostFocus(object sender, EventArgs e)
+
+        private void UsernameTxt_LostFocus(object sender, EventArgs e)
         {
             // When the user leaves the textbox
             if (string.IsNullOrWhiteSpace(loginTxt.Text))
@@ -55,6 +55,11 @@ namespace WinFormsApp1
                 loginTxt.Text = "Username";  // Set placeholder text
                 loginTxt.ForeColor = Color.DarkGray;  // Set text color to gray
             }
+
+        }
+
+        private void loginbutton_Click(object sender, EventArgs e)
+        {
 
         }
     }
