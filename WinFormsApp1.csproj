@@ -6,11 +6,11 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>ICON IMAGES\cvico.png</ApplicationIcon>
+    <ApplicationIcon>ICON IMAGES\Icon images.zip</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ICON IMAGES\cvico.png" />
+    <Content Include="ICON IMAGES\Icon images.zip" />
   </ItemGroup>
 
   <ItemGroup>
