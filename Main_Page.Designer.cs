@@ -318,6 +318,7 @@
             Controls.Add(calcuicoPB);
             Controls.Add(cvicoPB);
             Controls.Add(panel1);
+            Cursor = Cursors.Hand;
             Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "Main_Page";
