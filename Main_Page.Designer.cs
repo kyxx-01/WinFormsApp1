@@ -322,9 +322,7 @@
             Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Margin = new Padding(4);
             Name = "Main_Page";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Main_Page";
-            WindowState = FormWindowState.Maximized;
             Load += Main_Page_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)vsPB).EndInit();
