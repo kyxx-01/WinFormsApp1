@@ -31,18 +31,18 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registration_Form));
             label1 = new Label();
             Fnamepanel = new Panel();
+            FnameTB = new TextBox();
             Lnamepanel = new Panel();
+            LnameTB = new TextBox();
             emailpanel = new Panel();
+            EmailTB = new TextBox();
             passwordpanel = new Panel();
+            PasswordTB = new TextBox();
             conpasspanel = new Panel();
+            ConpassTB = new TextBox();
             Registerbutton = new Button();
             label2 = new Label();
             signinlinkLabel = new LinkLabel();
-            FnameTB = new TextBox();
-            LnameTB = new TextBox();
-            EmailTB = new TextBox();
-            ConpassTB = new TextBox();
-            PaasowrdTB = new TextBox();
             Fnamepanel.SuspendLayout();
             Lnamepanel.SuspendLayout();
             emailpanel.SuspendLayout();
@@ -71,6 +71,17 @@
             Fnamepanel.Size = new Size(188, 59);
             Fnamepanel.TabIndex = 1;
             // 
+            // FnameTB
+            // 
+            FnameTB.BackColor = Color.Honeydew;
+            FnameTB.BorderStyle = BorderStyle.None;
+            FnameTB.Location = new Point(10, 12);
+            FnameTB.Multiline = true;
+            FnameTB.Name = "FnameTB";
+            FnameTB.PlaceholderText = "Firstname";
+            FnameTB.Size = new Size(166, 36);
+            FnameTB.TabIndex = 0;
+            // 
             // Lnamepanel
             // 
             Lnamepanel.BackColor = Color.Honeydew;
@@ -79,6 +90,17 @@
             Lnamepanel.Name = "Lnamepanel";
             Lnamepanel.Size = new Size(188, 59);
             Lnamepanel.TabIndex = 2;
+            // 
+            // LnameTB
+            // 
+            LnameTB.BackColor = Color.Honeydew;
+            LnameTB.BorderStyle = BorderStyle.None;
+            LnameTB.Location = new Point(12, 12);
+            LnameTB.Multiline = true;
+            LnameTB.Name = "LnameTB";
+            LnameTB.PlaceholderText = "Lastname";
+            LnameTB.Size = new Size(166, 36);
+            LnameTB.TabIndex = 1;
             // 
             // emailpanel
             // 
@@ -89,14 +111,36 @@
             emailpanel.Size = new Size(416, 77);
             emailpanel.TabIndex = 3;
             // 
+            // EmailTB
+            // 
+            EmailTB.BackColor = Color.Honeydew;
+            EmailTB.BorderStyle = BorderStyle.None;
+            EmailTB.Location = new Point(17, 20);
+            EmailTB.Multiline = true;
+            EmailTB.Name = "EmailTB";
+            EmailTB.PlaceholderText = "Email";
+            EmailTB.Size = new Size(384, 35);
+            EmailTB.TabIndex = 0;
+            // 
             // passwordpanel
             // 
             passwordpanel.BackColor = Color.Honeydew;
-            passwordpanel.Controls.Add(PaasowrdTB);
+            passwordpanel.Controls.Add(PasswordTB);
             passwordpanel.Location = new Point(30, 315);
             passwordpanel.Name = "passwordpanel";
             passwordpanel.Size = new Size(416, 77);
             passwordpanel.TabIndex = 4;
+            // 
+            // PasswordTB
+            // 
+            PasswordTB.BackColor = Color.Honeydew;
+            PasswordTB.BorderStyle = BorderStyle.None;
+            PasswordTB.Location = new Point(16, 23);
+            PasswordTB.Multiline = true;
+            PasswordTB.Name = "PasswordTB";
+            PasswordTB.PlaceholderText = "Password";
+            PasswordTB.Size = new Size(384, 35);
+            PasswordTB.TabIndex = 2;
             // 
             // conpasspanel
             // 
@@ -107,6 +151,18 @@
             conpasspanel.Size = new Size(416, 77);
             conpasspanel.TabIndex = 5;
             // 
+            // ConpassTB
+            // 
+            ConpassTB.BackColor = Color.Honeydew;
+            ConpassTB.BorderStyle = BorderStyle.None;
+            ConpassTB.Location = new Point(17, 22);
+            ConpassTB.Multiline = true;
+            ConpassTB.Name = "ConpassTB";
+            ConpassTB.PlaceholderText = "Confirm Password";
+            ConpassTB.Size = new Size(384, 35);
+            ConpassTB.TabIndex = 1;
+            ConpassTB.TextChanged += textBox1_TextChanged;
+            // 
             // Registerbutton
             // 
             Registerbutton.BackColor = Color.SeaGreen;
@@ -116,6 +172,7 @@
             Registerbutton.TabIndex = 6;
             Registerbutton.Text = "Register";
             Registerbutton.UseVisualStyleBackColor = false;
+            Registerbutton.Click += Registerbutton_Click;
             // 
             // label2
             // 
@@ -140,62 +197,7 @@
             signinlinkLabel.TabIndex = 8;
             signinlinkLabel.TabStop = true;
             signinlinkLabel.Text = "Sign In";
-            // 
-            // FnameTB
-            // 
-            FnameTB.BackColor = Color.Honeydew;
-            FnameTB.BorderStyle = BorderStyle.None;
-            FnameTB.Location = new Point(10, 12);
-            FnameTB.Multiline = true;
-            FnameTB.Name = "FnameTB";
-            FnameTB.PlaceholderText = "Firstname";
-            FnameTB.Size = new Size(166, 36);
-            FnameTB.TabIndex = 0;
-            // 
-            // LnameTB
-            // 
-            LnameTB.BackColor = Color.Honeydew;
-            LnameTB.BorderStyle = BorderStyle.None;
-            LnameTB.Location = new Point(12, 12);
-            LnameTB.Multiline = true;
-            LnameTB.Name = "LnameTB";
-            LnameTB.PlaceholderText = "Lastname";
-            LnameTB.Size = new Size(166, 36);
-            LnameTB.TabIndex = 1;
-            // 
-            // EmailTB
-            // 
-            EmailTB.BackColor = Color.Honeydew;
-            EmailTB.BorderStyle = BorderStyle.None;
-            EmailTB.Location = new Point(17, 20);
-            EmailTB.Multiline = true;
-            EmailTB.Name = "EmailTB";
-            EmailTB.PlaceholderText = "Email";
-            EmailTB.Size = new Size(384, 35);
-            EmailTB.TabIndex = 0;
-            // 
-            // ConpassTB
-            // 
-            ConpassTB.BackColor = Color.Honeydew;
-            ConpassTB.BorderStyle = BorderStyle.None;
-            ConpassTB.Location = new Point(17, 22);
-            ConpassTB.Multiline = true;
-            ConpassTB.Name = "ConpassTB";
-            ConpassTB.PlaceholderText = "Confirm Password";
-            ConpassTB.Size = new Size(384, 35);
-            ConpassTB.TabIndex = 1;
-            ConpassTB.TextChanged += textBox1_TextChanged;
-            // 
-            // PaasowrdTB
-            // 
-            PaasowrdTB.BackColor = Color.Honeydew;
-            PaasowrdTB.BorderStyle = BorderStyle.None;
-            PaasowrdTB.Location = new Point(16, 23);
-            PaasowrdTB.Multiline = true;
-            PaasowrdTB.Name = "PaasowrdTB";
-            PaasowrdTB.PlaceholderText = "Password";
-            PaasowrdTB.Size = new Size(384, 35);
-            PaasowrdTB.TabIndex = 2;
+            signinlinkLabel.LinkClicked += signinlinkLabel_LinkClicked;
             // 
             // Registration_Form
             // 
@@ -214,7 +216,7 @@
             Controls.Add(label1);
             Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Registration_Form";
@@ -249,6 +251,6 @@
         private TextBox LnameTB;
         private TextBox ConpassTB;
         private TextBox EmailTB;
-        private TextBox PaasowrdTB;
+        private TextBox PasswordTB;
     }
 }

@@ -14,6 +14,8 @@ namespace WinFormsApp1
 {
     public partial class Login_Page : Form
     {
+        //each string[] holds email and password
+        public static List<string[]> Users = new List<string[]>();
         public Login_Page()
         {
             InitializeComponent();
@@ -60,7 +62,42 @@ namespace WinFormsApp1
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
+            string email = loginTxt.Text.Trim();
+            string password = passwordTxt.Text;
 
+            bool found = false;
+
+            foreach (string[] user in Users)
+            {
+                if (user[0] == email)
+                {
+                    if (user[1] == password)
+                    {
+                        MessageBox.Show("Login successful");
+                        Main_Page mainPage = new Main_Page();
+                        mainPage.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Wrong password");
+                    }
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found)
+            {
+                MessageBox.Show("Email not found");
+            }
+        }
+
+        private void registerbutton_Click(object sender, EventArgs e)
+        {
+            Registration_Form regform = new Registration_Form();
+            regform.Show();
+            this.Hide();
         }
     }
 }
