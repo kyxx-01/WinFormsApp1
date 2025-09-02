@@ -45,8 +45,8 @@
             ordericoPB = new PictureBox();
             cv = new Label();
             calculator = new Label();
-            grading = new Label();
-            ordering = new Label();
+            orderingsys = new Label();
+            gradingsys = new Label();
             Payroll = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vsPB).BeginInit();
@@ -209,13 +209,14 @@
             // 
             gradingicoPB.BackColor = Color.Transparent;
             gradingicoPB.Image = (Image)resources.GetObject("gradingicoPB.Image");
-            gradingicoPB.Location = new Point(25, 316);
+            gradingicoPB.Location = new Point(25, 441);
             gradingicoPB.Margin = new Padding(4);
             gradingicoPB.Name = "gradingicoPB";
             gradingicoPB.Size = new Size(78, 78);
             gradingicoPB.SizeMode = PictureBoxSizeMode.StretchImage;
             gradingicoPB.TabIndex = 3;
             gradingicoPB.TabStop = false;
+            gradingicoPB.Click += gradingicoPB_Click;
             // 
             // payrollicoPB
             // 
@@ -233,13 +234,14 @@
             // 
             ordericoPB.BackColor = Color.Transparent;
             ordericoPB.Image = (Image)resources.GetObject("ordericoPB.Image");
-            ordericoPB.Location = new Point(25, 437);
+            ordericoPB.Location = new Point(25, 317);
             ordericoPB.Margin = new Padding(4);
             ordericoPB.Name = "ordericoPB";
             ordericoPB.Size = new Size(78, 78);
             ordericoPB.SizeMode = PictureBoxSizeMode.StretchImage;
             ordericoPB.TabIndex = 5;
             ordericoPB.TabStop = false;
+            ordericoPB.Click += ordericoPB_Click;
             // 
             // cv
             // 
@@ -265,29 +267,30 @@
             calculator.TabIndex = 8;
             calculator.Text = "Calculator";
             // 
-            // grading
+            // orderingsys
             // 
-            grading.AutoSize = true;
-            grading.BackColor = Color.Transparent;
-            grading.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            grading.ForeColor = Color.White;
-            grading.Location = new Point(31, 399);
-            grading.Name = "grading";
-            grading.Size = new Size(59, 18);
-            grading.TabIndex = 9;
-            grading.Text = "Grading";
+            orderingsys.AutoSize = true;
+            orderingsys.BackColor = Color.Transparent;
+            orderingsys.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            orderingsys.ForeColor = Color.White;
+            orderingsys.Location = new Point(31, 399);
+            orderingsys.Name = "orderingsys";
+            orderingsys.Size = new Size(64, 18);
+            orderingsys.TabIndex = 9;
+            orderingsys.Text = "Ordering";
+            orderingsys.Click += grading_Click;
             // 
-            // ordering
+            // gradingsys
             // 
-            ordering.AutoSize = true;
-            ordering.BackColor = Color.Transparent;
-            ordering.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            ordering.ForeColor = Color.White;
-            ordering.Location = new Point(33, 523);
-            ordering.Name = "ordering";
-            ordering.Size = new Size(64, 18);
-            ordering.TabIndex = 10;
-            ordering.Text = "Ordering";
+            gradingsys.AutoSize = true;
+            gradingsys.BackColor = Color.Transparent;
+            gradingsys.Font = new Font("Palatino Linotype", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gradingsys.ForeColor = Color.White;
+            gradingsys.Location = new Point(33, 523);
+            gradingsys.Name = "gradingsys";
+            gradingsys.Size = new Size(59, 18);
+            gradingsys.TabIndex = 10;
+            gradingsys.Text = "Grading";
             // 
             // Payroll
             // 
@@ -309,8 +312,8 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1782, 898);
             Controls.Add(Payroll);
-            Controls.Add(ordering);
-            Controls.Add(grading);
+            Controls.Add(gradingsys);
+            Controls.Add(orderingsys);
             Controls.Add(calculator);
             Controls.Add(cv);
             Controls.Add(ordericoPB);
@@ -324,6 +327,7 @@
             Margin = new Padding(4);
             Name = "Main_Page";
             Text = "Main_Page";
+            WindowState = FormWindowState.Maximized;
             Load += Main_Page_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)vsPB).EndInit();
@@ -361,8 +365,8 @@
         private PictureBox ordericoPB;
         private Label cv;
         private Label calculator;
-        private Label grading;
-        private Label ordering;
+        private Label orderingsys;
+        private Label gradingsys;
         private Label Payroll;
     }
 }

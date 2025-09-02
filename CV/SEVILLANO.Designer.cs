@@ -63,6 +63,7 @@
             label7 = new Label();
             label6 = new Label();
             panel1 = new Panel();
+            returnbutton = new Button();
             tabPage3 = new TabPage();
             splitContainer3 = new SplitContainer();
             skill5INPUT = new TextBox();
@@ -108,6 +109,7 @@
             splitContainer2.Panel2.SuspendLayout();
             splitContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel1.SuspendLayout();
             tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer3).BeginInit();
             splitContainer3.Panel1.SuspendLayout();
@@ -475,10 +477,25 @@
             // panel1
             // 
             panel1.BackColor = Color.Teal;
+            panel1.Controls.Add(returnbutton);
             panel1.Location = new Point(-3, 1);
             panel1.Name = "panel1";
             panel1.Size = new Size(452, 44);
             panel1.TabIndex = 22;
+            // 
+            // returnbutton
+            // 
+            returnbutton.BackColor = Color.DarkSlateGray;
+            returnbutton.FlatStyle = FlatStyle.Popup;
+            returnbutton.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            returnbutton.ForeColor = Color.White;
+            returnbutton.Location = new Point(345, 7);
+            returnbutton.Name = "returnbutton";
+            returnbutton.Size = new Size(94, 29);
+            returnbutton.TabIndex = 23;
+            returnbutton.Text = "RETURN";
+            returnbutton.UseVisualStyleBackColor = false;
+            returnbutton.Click += returnbutton_Click;
             // 
             // tabPage3
             // 
@@ -642,12 +659,16 @@
             // 
             // button3
             // 
+            button3.BackColor = Color.DarkSlateGray;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
             button3.Location = new Point(316, 580);
             button3.Name = "button3";
             button3.Size = new Size(118, 29);
             button3.TabIndex = 23;
             button3.Text = "GENERATE";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // occupation2INPUT
@@ -882,6 +903,7 @@
             ((System.ComponentModel.ISupportInitialize)splitContainer2).EndInit();
             splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel1.ResumeLayout(false);
             tabPage3.ResumeLayout(false);
             splitContainer3.Panel1.ResumeLayout(false);
             splitContainer3.Panel1.PerformLayout();
@@ -971,5 +993,6 @@
         private Panel panel2;
         private Panel panel3;
         private Button button3;
+        private Button returnbutton;
     }
 }

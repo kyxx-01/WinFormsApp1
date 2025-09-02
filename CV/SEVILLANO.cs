@@ -266,5 +266,12 @@ namespace WinFormsApp1
             resume.contact2TB.Text = contact2INPUT.Text;
             resume.Show();
         }
+
+        private void returnbutton_Click(object sender, EventArgs e)
+        {
+            Form1 Form1 = new Form1();
+            Form1.Show();
+            this.Hide();
+        }
     }
 }

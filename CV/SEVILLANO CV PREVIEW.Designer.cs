@@ -42,7 +42,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            button1 = new Button();
             tertiaryTB = new TextBox();
             secondaryTB = new TextBox();
             primaryTB = new TextBox();
@@ -98,6 +97,7 @@
             label19 = new Label();
             panel4 = new Panel();
             label18 = new Label();
+            button1 = new Button();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
@@ -164,7 +164,6 @@
             // splitContainer1.Panel2
             // 
             splitContainer1.Panel2.BackColor = Color.AliceBlue;
-            splitContainer1.Panel2.Controls.Add(button1);
             splitContainer1.Panel2.Controls.Add(tertiaryTB);
             splitContainer1.Panel2.Controls.Add(secondaryTB);
             splitContainer1.Panel2.Controls.Add(primaryTB);
@@ -297,16 +296,6 @@
             label1.TabIndex = 1;
             label1.Text = "Name";
             label1.Click += label1_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(654, 941);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 19;
-            button1.Text = "BACK";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // tertiaryTB
             // 
@@ -854,6 +843,7 @@
             // panel4
             // 
             panel4.BackColor = Color.Teal;
+            panel4.Controls.Add(button1);
             panel4.Controls.Add(label18);
             panel4.Location = new Point(4, 0);
             panel4.Name = "panel4";
@@ -870,6 +860,20 @@
             label18.Size = new Size(221, 32);
             label18.TabIndex = 0;
             label18.Text = "Work Experience";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.DarkSlateGray;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(560, 24);
+            button1.Name = "button1";
+            button1.Size = new Size(165, 50);
+            button1.TabIndex = 2;
+            button1.Text = "RETURN";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click_1;
             // 
             // CV_PREVIEW
             // 
