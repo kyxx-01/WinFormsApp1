@@ -203,6 +203,7 @@
             calcuicoPB.SizeMode = PictureBoxSizeMode.StretchImage;
             calcuicoPB.TabIndex = 2;
             calcuicoPB.TabStop = false;
+            calcuicoPB.Click += calcuicoPB_Click;
             // 
             // gradingicoPB
             // 

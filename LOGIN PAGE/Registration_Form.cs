@@ -21,5 +21,17 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void Registerbutton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signinlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login_Page Login_Page = new Login_Page();
+            Login_Page.Show();
+            this.Hide();
+        }
     }
 }

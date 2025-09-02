@@ -136,7 +136,7 @@ namespace WinFormsApp1
         private void button10_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CVMenu Calculator = new CVMenu();
+            Form1 Calculator = new Form1();
             Calculator.Show();
         }
     }

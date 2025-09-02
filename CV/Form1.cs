@@ -52,7 +52,6 @@ namespace WinFormsApp1
             }
 
             // Apply styles to buttons
-            StyleBlueButton(button2);
             StyleBlueButton(button3);
             StyleBlueButton(button4);
             StyleBlueButton(button5);

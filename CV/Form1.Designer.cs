@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             panel1 = new Panel();
-            button2 = new Button();
             button6 = new Button();
             button5 = new Button();
             button4 = new Button();
@@ -57,7 +56,6 @@
             panel1.BackColor = Color.FromArgb(192, 255, 255);
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.BackgroundImageLayout = ImageLayout.Stretch;
-            panel1.Controls.Add(button2);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(button5);
             panel1.Controls.Add(button4);
@@ -68,18 +66,6 @@
             panel1.Size = new Size(1009, 602);
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.ActiveCaption;
-            button2.Font = new Font("Times New Roman", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(427, 495);
-            button2.Name = "button2";
-            button2.Size = new Size(168, 90);
-            button2.TabIndex = 5;
-            button2.Text = "CALCULATOR";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // button6
             // 
@@ -167,6 +153,5 @@
         private Button button4;
         private Button button6;
         private Button button5;
-        private Button button2;
     }
 }

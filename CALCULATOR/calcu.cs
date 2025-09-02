@@ -143,8 +143,8 @@ namespace WinFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CVMenu form1 = new CVMenu();
-            form1.Show();
+           Form1 Form1 = new Form1();
+           Form1.Show();
         }
     }
 }

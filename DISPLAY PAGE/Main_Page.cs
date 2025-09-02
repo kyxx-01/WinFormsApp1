@@ -21,12 +21,18 @@ namespace WinFormsApp1
         {
             Form2 form2 = new Form2();
             form2.Show();
-          
+
         }
 
         private void Main_Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void calcuicoPB_Click(object sender, EventArgs e)
+        {
+            calcu calcu = new calcu();
+            calcu.Show();
         }
     }
 }

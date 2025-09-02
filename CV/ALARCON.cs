@@ -24,7 +24,7 @@ namespace WinFormsApp1
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            CVMenu form1 = new CVMenu(); // Assuming Form1 is the main form
+            Form1 form1 = new Form1(); // Assuming Form1 is the main form
             form1.Show();
         }
 

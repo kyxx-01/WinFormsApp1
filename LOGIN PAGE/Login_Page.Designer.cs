@@ -86,6 +86,7 @@
             passwordTxt.Location = new Point(55, 16);
             passwordTxt.Multiline = true;
             passwordTxt.Name = "passwordTxt";
+            passwordTxt.PasswordChar = '•';
             passwordTxt.PlaceholderText = "Password";
             passwordTxt.Size = new Size(249, 28);
             passwordTxt.TabIndex = 9;
@@ -109,6 +110,7 @@
             registerbutton.TabIndex = 5;
             registerbutton.Text = "Register";
             registerbutton.UseVisualStyleBackColor = false;
+            registerbutton.Click += registerbutton_Click;
             // 
             // loginbutton
             // 

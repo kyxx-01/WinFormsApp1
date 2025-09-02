@@ -60,7 +60,16 @@ namespace WinFormsApp1
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
+            Main_Page Main_Page = new Main_Page();
+            Main_Page.Show();
+            this.Hide();
+        }
 
+        private void registerbutton_Click(object sender, EventArgs e)
+        {
+            Registration_Form Registration_Form = new Registration_Form();
+            Registration_Form.Show();
+            this.Hide();
         }
     }
 }
