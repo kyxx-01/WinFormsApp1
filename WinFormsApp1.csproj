@@ -9,10 +9,57 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ICON IMAGES\Icon images.zip" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <Compile Update="CALCULATOR\calcu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CALCULATOR\Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\ALARCON.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\ALARCONCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\CV LANDING PAGE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\CV MENU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\ESTACIO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\ESTACIOCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\SEVILLANO CV PREVIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\SEVILLANO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\TAMBA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="CV\TAMBACV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="DISPLAY PAGE\Main_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GRADING SYSTEM\Grading System Student Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOGIN PAGE\Login_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LOGIN PAGE\Registration_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ORDERING SYSTEM\Ordering.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -25,6 +72,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="PAYROLL SYSTEM\" />
   </ItemGroup>
 
 </Project>

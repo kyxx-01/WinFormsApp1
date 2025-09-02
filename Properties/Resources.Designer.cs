@@ -60,14 +60,6 @@ namespace WinFormsApp1.Properties {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Landing_BG {
-            get {
-                object obj = ResourceManager.GetObject("Landing BG", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
+        
     }
 }
